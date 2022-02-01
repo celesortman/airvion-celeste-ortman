@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@400;500;600;700&family=Trocchi&display=swap");
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media screen and (min-width: 969px) {
+  header {
+    height: 64px;
+  }
+  header .menu-desplegable {
+    display: none;
+  }
+}
+header nav {
+  padding: 0 3% 0 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  width: 56%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757272;
+  text-decoration: none;
+}
+
+.inicio {
+  color: #4E63D4;
+  font-weight: 600;
+}
+
+.registro {
+  border-radius: 8px;
+  border: 2px solid #4E63D4;
+  color: #4E63D4;
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.registro:hover {
+  background-color: #4E63D4;
+  border: 2px solid #4E63D4;
+  color: white;
+  transition: all 300ms ease-out;
+}
+
+.home-contenedor {
+  background-color: #CEEBF1;
+  width: 96%;
+  height: 40rem;
+  border-radius: 40px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home-contenedor h1 {
+  width: 56%;
+  font-weight: 700;
+  font-size: 96px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  line-height: 120px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+.home-contenedor img {
+  border-radius: 20px;
+  margin-top: 80px;
+}
+.home-contenedor h2 {
+  font-weight: 500;
+  font-size: 42px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -120px;
+  margin-left: -368px;
+}
+
+.buscador-contenedor {
+  background-color: #f9f9f9be;
+  position: relative;
+  top: -94px;
+  border-radius: 20px;
+  margin: auto;
+  width: 78%;
+  height: 12rem;
+  box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 148px;
+}
+.buscador-contenedor .definir-detalles {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (min-width: 969px) {
+  .buscador-contenedor .definir-detalles div button {
+    display: none;
+  }
+}
+.buscador-contenedor .definir-detalles .secciones-buscador {
+  display: inline-block;
+  padding: 0 16px 0 16px;
+}
+.buscador-contenedor .definir-detalles .secciones-buscador .button-search {
+  background-color: #4E63D4;
+  border-radius: 12px;
+  width: 64px;
+  height: 112px;
+}
+.buscador-contenedor .definir-detalles .secciones-buscador .button-search:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transform: scale(1.2);
+  transition: all 250ms ease-out;
+}
+.buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador label {
+  font-weight: 700;
+  font-size: 24px;
+}
+.buscador-contenedor .definir-detalles .secciones-buscador div input {
+  background-color: #EEEBEB;
+  color: #494747;
+  border: none;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  height: 2.5rem;
+}
+.buscador-contenedor .definir-detalles .secciones-buscador .vertical-line {
+  border-left: 1px solid #757272;
+}
+
+.promociones {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 148px;
+}
+.promociones .contenedor-titulo {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.promociones .contenedor-titulo h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0;
+  width: 80%;
+}
+.promociones .contenedor-titulo h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #757272;
+  width: 60%;
+}
+.promociones .contenedor-destinos {
+  width: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.promociones .contenedor-destinos .destinos-carrousel {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+.promociones .contenedor-destinos .destinos-carrousel img {
+  width: 90%;
+  border-radius: 25px;
+}
+.promociones .contenedor-destinos .destinos-carrousel div .precio {
+  background-color: #4E63D4;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 24px;
+  width: 52%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -24px;
+  margin-left: 92px;
+  margin-bottom: 24px;
+}
+.promociones .contenedor-destinos .destinos-carrousel div .precio:hover {
+  transform: scale(1.2);
+  transition: all 300ms ease-out;
+}
+.promociones .contenedor-destinos .destinos-carrousel div h4 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.promociones .contenedor-destinos .destinos-carrousel div h5 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.promociones .contenedor-destinos .destinos-carrousel div .cantidad-lugares {
+  font-weight: 400;
+  font-size: 14px;
+  color: #757272;
+  margin-top: 0;
+}
+
+.excursiones {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 148px;
+}
+.excursiones div {
+  width: 50%;
+}
+.excursiones div .contenedor-excursiones {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.excursiones div .contenedor-excursiones img {
+  width: 100%;
+  border-radius: 30px;
+}
+.excursiones div .contenedor-excursiones h5 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.excursiones div .contenedor-excursiones button {
+  border-radius: 5px;
+  color: white;
+  background-color: #4E63D4;
+  border: none;
+  height: 3rem;
+  width: 35%;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 32%;
+}
+.excursiones div .contenedor-excursiones button:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transform: scale(1.2);
+  transition: all 250ms ease-out;
+}
+.excursiones .contenedor-titulo {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.excursiones .contenedor-titulo h3 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: right;
+  margin: 0;
+  width: 80%;
+}
+.excursiones .contenedor-titulo h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #757272;
+  text-align: right;
+  width: 80%;
+}
+
+.contenedor-nosotros {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 148px;
+}
+.contenedor-nosotros .titulo-nosotros {
+  padding-right: 20px;
+}
+.contenedor-nosotros div {
+  width: 50%;
+}
+.contenedor-nosotros div h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0;
+}
+.contenedor-nosotros div p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #757272;
+  width: 90%;
+}
+.contenedor-nosotros div .imagen-equipo {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.beneficios {
+  margin-bottom: 148px;
+}
+.beneficios h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.beneficios h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #757272;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.beneficios .contenedor-beneficios {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.beneficios .contenedor-beneficios .beneficios-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CEEBF1;
+  width: 30%;
+  border-radius: 15px;
+  margin: 0px 20px 0px 0px;
+}
+.beneficios .contenedor-beneficios .beneficios-card h5 {
+  display: flex;
+  margin: 16px 40px 20px 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.beneficios .contenedor-beneficios .beneficios-card img {
+  width: 32px;
+  margin-right: 16px;
+}
+.beneficios .contenedor-beneficios .beneficios-card .parrafo-card-beneficios {
+  color: #757272;
+  margin: 0 40px 20px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.beneficios .parrafo-inferior-beneficios {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  color: #757272;
+}
+
+.medios-de-pago {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 148px;
+}
+.medios-de-pago h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.medios-de-pago h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #757272;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 72px;
+  width: 100%;
+}
+.medios-de-pago div {
+  background-color: white;
+  border: 4px solid #CEEBF1;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 12rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.medios-de-pago div h5 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+  width: 348px;
+  text-align: center;
+  margin-top: 0;
+}
+.medios-de-pago div .logo-transferencia {
+  width: 84px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.medios-de-pago div .logo-mercadopago {
+  width: 217px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.medios-de-pago div .logo-mastercard {
+  width: 86px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.medios-de-pago div .logo-visa {
+  width: 123px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.medios-de-pago div .logo-pago-facil {
+  width: 80px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.medios-de-pago div .logo-rapipago {
+  width: 173px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+footer {
+  background-color: #CEEBF1;
+  width: 100%;
+}
+@media screen and (min-width: 969px) {
+  footer {
+    height: 388px;
+  }
+  footer hr {
+    display: none;
+  }
+}
+footer div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+footer div .section-email {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+footer div .section-email img {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 8px;
+}
+footer div .section-email label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  width: 56%;
+  display: flex;
+  flex-flow: row wrap;
+}
+footer div .section-email input {
+  background-color: white;
+  color: #757272;
+  border-radius: 5px;
+  border: 1px solid #757272;
+  font-weight: 400;
+  font-size: 16px;
+  height: 2.5rem;
+  width: 100%;
+  margin: 20px 0 12px 0;
+}
+footer div .section-email button {
+  border-radius: 5px;
+  border: 2px solid #4E63D4;
+  color: #4E63D4;
+  background-color: #CEEBF1;
+  font-weight: 600;
+  font-size: 16px;
+  height: 3rem;
+  width: 100%;
+}
+footer div section {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 26%;
+}
+footer div section nav ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+footer div section nav ul li {
+  list-style-type: none;
+}
+footer div section nav ul li a {
+  color: #292929;
+  text-decoration: none;
+}
+footer div section nav .conjunto-iconos-redes {
+  width: 70%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+footer div section h3 {
+  font-weight: 700;
+  font-size: 32px;
+}
+footer div section h4 {
+  font-weight: 700;
+  font-size: 20px;
+}
+footer .copyright {
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #292929;
+  background-color: #FDFDFD;
+}
+
+/*# sourceMappingURL=style.css.map */

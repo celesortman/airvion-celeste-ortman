@@ -1,0 +1,30 @@
+.contenedor-nosotros {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 148px;
+    .titulo-nosotros {
+        padding-right: 20px;
+    }
+    div {
+        width: 50%;
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+            margin-top: 0;
+        }
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: nth($colores, 2);
+            width: 90%;
+        }
+        .imagen-equipo {
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+        
+    }

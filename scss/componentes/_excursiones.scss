@@ -1,0 +1,64 @@
+.excursiones {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 148px;
+    div {
+        width: 50%;
+        .contenedor-excursiones {
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            img {
+                width: 100%;
+                border-radius: 30px;
+            }
+            h5 {
+                font-weight: 500;
+                font-size: 16px;
+            }
+            button {
+                border-radius: 5px;
+                color: nth($colores, 8);
+                background-color: nth($colores, 1);
+                border: none;
+                height: 3rem;
+                width: 35%;
+                font-weight: 600;
+                font-size: 24px;
+                margin-left: 32%;
+                &:hover {
+                    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+                    transform: scale(1.2);
+                    transition: all 250ms ease-out;
+                }
+            }
+            
+        }
+    }
+        .contenedor-titulo {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+            h3 {
+                font-weight: 700;
+                font-size: 32px;
+                text-align: right;
+                margin: 0;
+                width: 80%;
+                
+            }
+            h4 {
+                font-weight: 400;
+                font-size: 20px;
+                color: nth($colores, 2);
+                text-align: right;
+                width: 80%;
+            }
+        
+    }
+}

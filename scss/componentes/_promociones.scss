@@ -1,0 +1,80 @@
+.promociones {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 148px;
+    .contenedor-titulo {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 50%;
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+            margin: 0;
+            width: 80%;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 20px;
+            color: nth($colores, 2);
+            width: 60%;
+        }
+    }
+    .contenedor-destinos {
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        .destinos-carrousel {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            img {
+                width: 90%;
+                border-radius: 25px;
+            }
+            div {
+                .precio {
+                    background-color: nth($colores, 1);
+                    color: nth($colores, 8);
+                    border-radius: 6px;
+                    font-weight: 600;
+                    font-size: 24px;
+                    width: 52%;
+                    height: 3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: -24px;
+                    margin-left: 92px;
+                    margin-bottom: 24px;
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: all 300ms ease-out;
+                    }
+                }
+                h4 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+                h5 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-top: 0;
+                    margin-bottom: 12px;
+                }
+                .cantidad-lugares {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: nth($colores, 2);
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

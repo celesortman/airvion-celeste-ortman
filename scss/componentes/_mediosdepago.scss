@@ -1,0 +1,75 @@
+.medios-de-pago {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 148px;
+    h3 {
+        font-weight: 700;
+        font-size: 32px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    h4 {
+        font-weight: 400;
+        font-size: 20px;
+        color: nth($colores, 2);
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 72px;
+        width: 100%;
+    }
+    div {
+        background-color: nth($colores, 8);
+        border: 4px solid nth($colores, 4);
+        border-radius: 15px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 32%;
+        height: 12rem;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        h5 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 16px;
+            width: 348px;
+            text-align: center;
+            margin-top: 0;
+        }
+        .logo-transferencia {
+            width: 84px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .logo-mercadopago {
+            width: 217px;
+        display: flex;
+        flex-flow: row nowrap;
+        }
+        .logo-mastercard {
+            width: 86px;
+        display: flex;
+        flex-flow: row nowrap;
+        }
+        .logo-visa {
+            width: 123px;
+        display: flex;
+        flex-flow: row nowrap;
+        }
+        .logo-pago-facil {
+            width: 80px;
+        display: flex;
+        flex-flow: row nowrap;
+        }
+        .logo-rapipago {
+            width: 173px;
+        display: flex;
+        flex-flow: row nowrap;
+        }
+    }
+}

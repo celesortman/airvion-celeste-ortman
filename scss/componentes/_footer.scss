@@ -1,0 +1,96 @@
+
+
+footer {
+    background-color: nth($colores, 4);
+    width: 100%;
+    @media screen and (min-width: 969px) {
+        height: 388px;
+        
+        hr {
+            display: none;
+        }
+    }
+    div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        .section-email {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            img {
+                display: flex;
+                flex-flow: row wrap;
+                margin-right: 8px;
+            }
+            label {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                width: 56%;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            input {
+                background-color: nth($colores, 8);
+                color: nth($colores, 2);
+                border-radius: 5px;
+                border: 1px solid nth($colores, 2);
+                font-weight: 400;
+                font-size: 16px;
+                height: 2.5rem;
+                width: 100%;
+                margin: 20px 0 12px 0;
+            }
+            button {
+                border-radius: 5px;
+                border: 2px solid nth($colores, 1);
+                color: nth($colores, 1);
+                background-color: nth($colores, 4);
+                font-weight: 600;
+                font-size: 16px;
+                height: 3rem;
+                width: 100%;
+            }
+        }
+        section {
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            width: 26%;
+            nav {
+                ul {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: flex-start;
+                    padding: 0;
+                    li {
+                        list-style-type: none;
+                        a {
+                            color: nth($colores, 3);
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .conjunto-iconos-redes {
+                    width: 70%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                }
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 32px;
+            }
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}
