@@ -1,34 +1,29 @@
+@import "../bases/mixins"; 
+
+/*Inicio Excursiones*/
+
 .excursiones {
-    display: flex;
-    flex-flow: row nowrap;
+    @include display(flex, row nowrap, space-between, null);
     width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 148px;
     div {
         width: 50%;
         .contenedor-excursiones {
             width: 100%;
-            display: flex;
-            flex-flow: column wrap;
+            @include display(flex, column wrap, null, null);
             img {
                 width: 100%;
                 border-radius: 30px;
             }
             h5 {
-                font-weight: 500;
-                font-size: 16px;
+                @include textos(500, 16px);
             }
             button {
-                border-radius: 5px;
-                color: nth($colores, 8);
-                background-color: nth($colores, 1);
-                border: none;
+                @include botones(5px, none, nth($colores, 8), null, nth($colores, 1));
                 height: 3rem;
                 width: 35%;
-                font-weight: 600;
-                font-size: 24px;
+                @include textos(600, 24px);
                 margin-left: 32%;
                 &:hover {
                     box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
@@ -40,21 +35,15 @@
         }
     }
         .contenedor-titulo {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: flex-start;
-            align-items: flex-end;
+            @include display(flex, column wrap, flex-start, flex-end);
             h3 {
-                font-weight: 700;
-                font-size: 32px;
+                @include textos(700, 32px);
                 text-align: right;
                 margin: 0;
                 width: 80%;
-                
             }
             h4 {
-                font-weight: 400;
-                font-size: 20px;
+                @include textos(400, 20px);
                 color: nth($colores, 2);
                 text-align: right;
                 width: 80%;
@@ -62,3 +51,5 @@
         
     }
 }
+
+/*Fin Excursiones*/

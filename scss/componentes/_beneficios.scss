@@ -1,16 +1,17 @@
+@import "../bases/mixins";
 
+/*Inicio Beneficios*/
 
 .beneficios {
     margin-bottom: 148px;
     h3 {
-        
+        @include textos(700, 32px);
         margin: auto;
         text-align: center;
         margin-bottom: 16px;
     }
     h4 {
-        font-weight: 400;
-        font-size: 20px;
+        @include textos(400, 20px);
         color: nth($colores, 2);
         width: 60%;
         margin: auto;
@@ -19,15 +20,10 @@
     }
     .contenedor-beneficios {
         width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
+        @include display(flex, row nowrap, center, null);
         margin-bottom: 72px;
         .beneficios-card {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: center;
+            @include display(flex, row wrap, space-between, center);
             background-color: nth($colores, 4);
             width: 30%;
             border-radius: 15px;
@@ -35,8 +31,7 @@
             h5 {
                 display: flex;
                 margin: 16px 40px 20px 20px;
-                font-weight: 600;
-                font-size: 20px;
+                @include textos(600, 20px);
             }
             img {
                 width: 32px;
@@ -45,19 +40,18 @@
             .parrafo-card-beneficios {
                 color: nth($colores, 2);
                 margin: 0 40px 20px 20px;
-                font-weight: 400;
-                font-size: 20px;
-                display: flex;
-                justify-content: space-between;
+                @include textos(400, 20px);
+                @include display(flex, null, space-between, null);
             }
         }
     }
     .parrafo-inferior-beneficios {
-        font-weight: 400;
-        font-size: 24px;
+        @include textos(400, 24px);
         text-align: center;
         width: 70%;
         margin: auto;
         color: nth($colores, 2);
     }
 }
+
+/*Fin Beneficios*/

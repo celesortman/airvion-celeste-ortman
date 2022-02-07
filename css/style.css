@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@400;500;600;700&family=Trocchi&display=swap");
+/*Inicio Header*/
 header {
   background-color: white;
   width: 100%;
@@ -53,12 +54,14 @@ header nav ul li a {
   font-weight: 500;
 }
 .registro:hover {
-  background-color: #4E63D4;
   border: 2px solid #4E63D4;
   color: white;
+  background-color: #4E63D4;
   transition: all 300ms ease-out;
 }
 
+/*Fin Header*/
+/*Inicio Home*/
 .home-contenedor {
   background-color: #CEEBF1;
   width: 96%;
@@ -116,7 +119,7 @@ header nav ul li a {
 .buscador-contenedor .definir-detalles {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 969px) {
   .buscador-contenedor .definir-detalles div button {
@@ -128,8 +131,8 @@ header nav ul li a {
   padding: 0 16px 0 16px;
 }
 .buscador-contenedor .definir-detalles .secciones-buscador .button-search {
-  background-color: #4E63D4;
   border-radius: 12px;
+  background-color: #4E63D4;
   width: 64px;
   height: 112px;
 }
@@ -149,10 +152,10 @@ header nav ul li a {
   font-size: 24px;
 }
 .buscador-contenedor .definir-detalles .secciones-buscador div input {
-  background-color: #EEEBEB;
-  color: #494747;
-  border: none;
   border-radius: 12px;
+  border: none;
+  color: #494747;
+  background-color: #EEEBEB;
   font-weight: 400;
   font-size: 14px;
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.13);
@@ -163,13 +166,14 @@ header nav ul li a {
   border-left: 1px solid #757272;
 }
 
+/*Fin Home*/
+/*Inicio Promociones*/
 .promociones {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 148px;
 }
 .promociones .contenedor-titulo {
@@ -206,9 +210,9 @@ header nav ul li a {
   border-radius: 25px;
 }
 .promociones .contenedor-destinos .destinos-carrousel div .precio {
-  background-color: #4E63D4;
-  color: white;
   border-radius: 6px;
+  color: white;
+  background-color: #4E63D4;
   font-weight: 600;
   font-size: 24px;
   width: 52%;
@@ -242,13 +246,14 @@ header nav ul li a {
   margin-top: 0;
 }
 
+/*Fin Promociones*/
+/*Inicio Excursiones*/
 .excursiones {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 148px;
 }
 .excursiones div {
@@ -269,9 +274,9 @@ header nav ul li a {
 }
 .excursiones div .contenedor-excursiones button {
   border-radius: 5px;
+  border: none;
   color: white;
   background-color: #4E63D4;
-  border: none;
   height: 3rem;
   width: 35%;
   font-weight: 600;
@@ -304,6 +309,8 @@ header nav ul li a {
   width: 80%;
 }
 
+/*Fin Excursiones*/
+/*Inicio Sobre nosotros*/
 .contenedor-nosotros {
   display: flex;
   flex-flow: row nowrap;
@@ -334,10 +341,14 @@ header nav ul li a {
   border-radius: 30px;
 }
 
+/*Fin Sobre nosotros*/
+/*Inicio Beneficios*/
 .beneficios {
   margin-bottom: 148px;
 }
 .beneficios h3 {
+  font-weight: 700;
+  font-size: 32px;
   margin: auto;
   text-align: center;
   margin-bottom: 16px;
@@ -395,6 +406,8 @@ header nav ul li a {
   color: #757272;
 }
 
+/*Fin Beneficios*/
+/*Inicio Medios de pago*/
 .medios-de-pago {
   display: flex;
   flex-flow: row wrap;
@@ -471,6 +484,8 @@ header nav ul li a {
   flex-flow: row nowrap;
 }
 
+/*Fin Medios de pago*/
+/*Inicio Footer*/
 footer {
   background-color: #CEEBF1;
   width: 100%;
@@ -508,10 +523,10 @@ footer div .section-email label {
   flex-flow: row wrap;
 }
 footer div .section-email input {
-  background-color: white;
-  color: #757272;
   border-radius: 5px;
   border: 1px solid #757272;
+  color: #757272;
+  background-color: white;
   font-weight: 400;
   font-size: 16px;
   height: 2.5rem;
@@ -565,6 +580,7 @@ footer .copyright {
   text-align: center;
 }
 
+/*Fin Footer*/
 body {
   font-family: "Poppins", sans-serif;
   color: #292929;

@@ -1,3 +1,5 @@
+/*Inicio Home*/
+
 .home-contenedor {
     background-color: nth($colores, 4);
     width: 96%;
@@ -5,21 +7,14 @@
     border-radius: 40px;
     margin: auto;
     margin-top: 68px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
+    @include display(flex, row wrap, center, flex-start);
     h1 {
         width: 56%;
-        font-weight: 700;
-        font-size: 96px;
+        @include textos(700, 96px);
         margin-bottom: 8px;
         margin-right: 10px;
         line-height: 120px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+        @include display(flex, row wrap, flex-start, flex-start);
         margin-top: 60px;
     }
     img {
@@ -27,12 +22,8 @@
         margin-top: 80px;
     }
     h2 {
-        font-weight: 500;
-        font-size: 42px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+        @include textos(500, 42px);
+        @include display(flex, row wrap, center, center);
         margin-top: -120px;
         margin-left: -368px;
     }
@@ -46,14 +37,10 @@
     width: 78%;
     height: 12rem;
     box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include display(flex, null, space-around, center);
     margin-bottom: 148px;
     .definir-detalles {
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        @include display(flex, null, center, center);
         @media screen and (min-width: 969px) {
             div {
                 button {
@@ -62,11 +49,10 @@
             }
         }
         .secciones-buscador {
-            display: inline-block;
+            @include display(inline-block, null, null, null);
             padding: 0 16px 0 16px;
             .button-search {
-                background-color: nth($colores, 1);
-                border-radius: 12px;
+                @include botones(12px, null, null, null, nth($colores, 1));
                 width: 64px;
                 height: 112px;
                 &:hover{
@@ -77,22 +63,15 @@
             }
             .formularios-buscador {
                 margin-bottom: 32px;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
+                @include display(flex, null, flex-start, center);
                 label {
-                    font-weight: 700;
-                    font-size: 24px;
+                    @include textos(700, 24px);
                 }
             }
             div {
                 input {
-                    background-color: nth($colores, 6);
-                    color: nth($colores, 7);
-                    border: none;
-                    border-radius: 12px;
-                    font-weight: 400;
-                    font-size: 14px;
+                    @include botones(12px, none, nth($colores, 7), null, nth($colores, 6));
+                    @include textos(400, 14px);
                     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
                     width: 100%;
                     height: 2.5rem;
@@ -104,3 +83,5 @@
         }
     }
 }
+
+/*Fin Home*/

@@ -2,3 +2,18 @@
     font-weight: $weight;
     font-size: $size;
 }
+
+@mixin botones($radius, $border, $color, $padding, $bg-color) {
+    border-radius: $radius;
+    border: $border;
+    color: $color;
+    padding: $padding;
+    background-color: $bg-color;
+}
+
+@mixin display($display, $flex-flow, $justify, $align) {
+    display: $display;
+    flex-flow: $flex-flow;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,10 +1,12 @@
 @import "../bases/colores";
+@import "../bases/mixins";
+
+/*Inicio Header*/
 
 header {
     background-color: nth($colores, 8);
     width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
+    @include display(flex, row nowrap, null, null);
     position: fixed;
     top: 0;
     left: 0;
@@ -18,20 +20,15 @@ header {
     nav {
         padding: 0 3% 0 3%;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include display(flex, null, space-between, center);
         ul {
             width: 56%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
+            @include display(flex, row nowrap, space-between, null);
             li {
                 
                 list-style-type: none;
                 a {
-                    font-weight: 400;
-                    font-size: 16px;
+                    @include textos(400, 16px);
                     color: nth($colores, 2);
                     text-decoration: none;
                 }
@@ -42,20 +39,16 @@ header {
 
 .inicio {
     color: nth($colores , 1);
-    font-weight: 600;
+    @include textos(600, null);
 }
 
 .registro {
-    border-radius: 8px;
-    border: 2px solid nth($colores, 1);
-    color: nth($colores, 1);
-    padding: 8px 12px;
-    font-weight: 500;
+    @include botones(8px, 2px solid nth($colores, 1), nth($colores, 1), 8px 12px, null);
+    @include textos(500, null);
 
     &:hover {
-        background-color: nth($colores, 1);
-        border: 2px solid nth($colores, 1);
-        color: nth($colores, 8);
+        @include botones(null, 2px solid nth($colores, 1), nth($colores, 8), null, nth($colores, 1));
         transition: all 300ms ease-out;
     }
 }
+/*Fin Header*/

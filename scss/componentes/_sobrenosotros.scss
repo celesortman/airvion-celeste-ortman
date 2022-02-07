@@ -1,6 +1,7 @@
+/*Inicio Sobre nosotros*/
+
 .contenedor-nosotros {
-    display: flex;
-    flex-flow: row nowrap;
+    @include display(flex, row nowrap, null, null);
     width: 80%;
     margin: auto;
     margin-bottom: 148px;
@@ -10,13 +11,11 @@
     div {
         width: 50%;
         h3 {
-            font-weight: 700;
-            font-size: 32px;
+            @include textos(700, 32px);
             margin-top: 0;
         }
         p {
-            font-weight: 400;
-            font-size: 20px;
+            @include textos(400, 20px);
             line-height: 32px;
             color: nth($colores, 2);
             width: 90%;
@@ -26,5 +25,6 @@
             border-radius: 30px;
         }
     }
-        
-    }
+}
+
+/*Fin Sobre nosotros*/
