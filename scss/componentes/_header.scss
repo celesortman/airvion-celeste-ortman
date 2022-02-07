@@ -5,7 +5,7 @@
 
 header {
     background-color: nth($colores, 8);
-    width: 100%;
+    @include tamaño(100%, null);
     @include display(flex, row nowrap, null, null);
     position: fixed;
     top: 0;
@@ -15,14 +15,14 @@ header {
         .menu-desplegable {
             display: none;
         }
-        height: 64px;
+        @include tamaño(null, 64px);
     }
     nav {
         padding: 0 3% 0 3%;
-        width: 100%;
+        @include tamaño(100%, null);
         @include display(flex, null, space-between, center);
         ul {
-            width: 56%;
+            @include tamaño(56%, null);
             @include display(flex, row nowrap, space-between, null);
             li {
                 

@@ -4,9 +4,9 @@
 
 footer {
     background-color: nth($colores, 4);
-    width: 100%;
+    @include tamaño(100%, null);
     @media screen and (min-width: 969px) {
-        height: 388px;
+        @include tamaño(null, 388px);
         hr {
             display: none;
         }
@@ -22,26 +22,24 @@ footer {
             label {
                 @include textos(600, 20px);
                 line-height: 24px;
-                width: 56%;
+                @include tamaño(56%, null);
                 @include display(flex, row wrap, null, null);
             }
             input {
                 @include botones(5px, 1px solid nth($colores, 2), nth($colores, 2), null, nth($colores, 8));
                 @include textos(400, 16px);
-                height: 2.5rem;
-                width: 100%;
+                @include tamaño(100%, 2.5rem);
                 margin: 20px 0 12px 0;
             }
             button {
                 @include botones(5px, 2px solid nth($colores, 1), nth($colores, 1), null, nth($colores, 4));
                 @include textos(600, 16px);
-                height: 3rem;
-                width: 100%;
+                @include tamaño(100%, 3rem);
             }
         }
         section {
             @include display(flex, column, flex-start, null);
-            width: 26%;
+            @include tamaño(26%, null);
             nav {
                 ul {
                     @include display(flex, column wrap, flex-start, null);
@@ -55,7 +53,7 @@ footer {
                     }
                 }
                 .conjunto-iconos-redes {
-                    width: 70%;
+                    @include tamaño(70%, null);
                     @include display(flex, row nowrap, space-between, null);
                 }
             }

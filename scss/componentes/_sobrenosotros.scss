@@ -2,14 +2,14 @@
 
 .contenedor-nosotros {
     @include display(flex, row nowrap, null, null);
-    width: 80%;
+    @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 148px;
     .titulo-nosotros {
         padding-right: 20px;
     }
     div {
-        width: 50%;
+        @include tamaño(50%, null);
         h3 {
             @include textos(700, 32px);
             margin-top: 0;
@@ -18,10 +18,10 @@
             @include textos(400, 20px);
             line-height: 32px;
             color: nth($colores, 2);
-            width: 90%;
+            @include tamaño(90%, null);
         }
         .imagen-equipo {
-            width: 100%;
+            @include tamaño(100%, null);
             border-radius: 30px;
         }
     }

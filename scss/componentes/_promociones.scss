@@ -2,38 +2,37 @@
 
 .promociones {
     @include display(flex, row nowrap, space-between, null);
-    width: 80%;
+    @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 148px;
     .contenedor-titulo {
         @include display(flex, column wrap, flex-start, flex-start);
-        width: 50%;
+        @include tamaño(50%, null);
         h3 {
             @include textos(700, 32px);
             margin: 0;
-            width: 80%;
+            @include tamaño(80%, null);
         }
         h4 {
             @include textos(400, 20px);
             color: nth($colores, 2);
-            width: 60%;
+            @include tamaño(60%, null);
         }
     }
     .contenedor-destinos {
-        width: 60%;
+        @include tamaño(60%, null);
         @include display(flex, row nowrap, null, null);
         .destinos-carrousel {
             @include display(flex, column wrap, flex-start, null);
             img {
-                width: 90%;
+                @include tamaño(90%, null);
                 border-radius: 25px;
             }
             div {
                 .precio {
                     @include botones(6px, null, nth($colores, 8), null, nth($colores, 1));
                     @include textos(600, 24px);
-                    width: 52%;
-                    height: 3rem;
+                    @include tamaño(52%, 3rem);
                     @include display(flex, null, center, center);
                     margin-top: -24px;
                     margin-left: 92px;

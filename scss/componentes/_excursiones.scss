@@ -4,16 +4,16 @@
 
 .excursiones {
     @include display(flex, row nowrap, space-between, null);
-    width: 80%;
+    @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 148px;
     div {
-        width: 50%;
+        @include tamaño(50%, null);
         .contenedor-excursiones {
-            width: 100%;
+            @include tamaño(100%, null);
             @include display(flex, column wrap, null, null);
             img {
-                width: 100%;
+                @include tamaño(100%, null);
                 border-radius: 30px;
             }
             h5 {
@@ -21,8 +21,7 @@
             }
             button {
                 @include botones(5px, none, nth($colores, 8), null, nth($colores, 1));
-                height: 3rem;
-                width: 35%;
+                @include tamaño(35%, 3rem);
                 @include textos(600, 24px);
                 margin-left: 32%;
                 &:hover {
@@ -40,13 +39,13 @@
                 @include textos(700, 32px);
                 text-align: right;
                 margin: 0;
-                width: 80%;
+                @include tamaño(80%, null);
             }
             h4 {
                 @include textos(400, 20px);
                 color: nth($colores, 2);
                 text-align: right;
-                width: 80%;
+                @include tamaño(80%, null);
             }
         
     }

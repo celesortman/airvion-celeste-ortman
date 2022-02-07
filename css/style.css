@@ -277,8 +277,8 @@ header nav ul li a {
   border: none;
   color: white;
   background-color: #4E63D4;
-  height: 3rem;
   width: 35%;
+  height: 3rem;
   font-weight: 600;
   font-size: 24px;
   margin-left: 32%;
@@ -529,8 +529,8 @@ footer div .section-email input {
   background-color: white;
   font-weight: 400;
   font-size: 16px;
-  height: 2.5rem;
   width: 100%;
+  height: 2.5rem;
   margin: 20px 0 12px 0;
 }
 footer div .section-email button {
@@ -540,8 +540,8 @@ footer div .section-email button {
   background-color: #CEEBF1;
   font-weight: 600;
   font-size: 16px;
-  height: 3rem;
   width: 100%;
+  height: 3rem;
 }
 footer div section {
   display: flex;
