@@ -20,20 +20,20 @@ footer {
                 margin-right: 8px;
             }
             label {
-                @include textos(600, 20px);
+                @include textos(600, 20px, null, null);
                 line-height: 24px;
                 @include tamaño(56%, null);
                 @include display(flex, row wrap, null, null);
             }
             input {
                 @include botones(5px, 1px solid nth($colores, 2), nth($colores, 2), null, nth($colores, 8));
-                @include textos(400, 16px);
+                @include textos(400, 16px, null, null);
                 @include tamaño(100%, 2.5rem);
                 margin: 20px 0 12px 0;
             }
             button {
                 @include botones(5px, 2px solid nth($colores, 1), nth($colores, 1), null, nth($colores, 4));
-                @include textos(600, 16px);
+                @include textos(600, 16px, null, null);
                 @include tamaño(100%, 3rem);
             }
         }
@@ -58,10 +58,10 @@ footer {
                 }
             }
             h3 {
-                @include textos(700, 32px);
+                @include textos(700, 32px, null, null);
             }
             h4 {
-                @include textos(700, 20px);
+                @include textos(700, 20px, null, null);
             }
         }
     }

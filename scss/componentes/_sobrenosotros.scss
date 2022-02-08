@@ -11,12 +11,11 @@
     div {
         @include tamaño(50%, null);
         h3 {
-            @include textos(700, 32px);
+            @include textos(700, 32px, null, null);
             margin-top: 0;
         }
         p {
-            @include textos(400, 20px);
-            line-height: 32px;
+            @include textos(400, 20px, 32px, null);
             color: nth($colores, 2);
             @include tamaño(90%, null);
         }

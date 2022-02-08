@@ -28,7 +28,7 @@ header {
                 
                 list-style-type: none;
                 a {
-                    @include textos(400, 16px);
+                    @include textos(400, 16px, null, null);
                     color: nth($colores, 2);
                     text-decoration: none;
                 }
@@ -39,12 +39,12 @@ header {
 
 .inicio {
     color: nth($colores , 1);
-    @include textos(600, null);
+    @include textos(600, null, null, null);
 }
 
 .registro {
     @include botones(8px, 2px solid nth($colores, 1), nth($colores, 1), 8px 12px, null);
-    @include textos(500, null);
+    @include textos(500, null, null, null);
 
     &:hover {
         @include botones(null, 2px solid nth($colores, 1), nth($colores, 8), null, nth($colores, 1));

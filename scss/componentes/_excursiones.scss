@@ -7,48 +7,86 @@
     @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 148px;
-    div {
-        @include tamaño(50%, null);
-        .contenedor-excursiones {
-            @include tamaño(100%, null);
-            @include display(flex, column wrap, null, null);
-            img {
-                @include tamaño(100%, null);
-                border-radius: 30px;
-            }
-            h5 {
-                @include textos(500, 16px);
-            }
-            button {
-                @include botones(5px, none, nth($colores, 8), null, nth($colores, 1));
-                @include tamaño(35%, 3rem);
-                @include textos(600, 24px);
-                margin-left: 32%;
-                &:hover {
-                    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
-                    transform: scale(1.2);
-                    transition: all 250ms ease-out;
-                }
+    .slide {
+        position: relative;
+        @include tamaño(60%, null);
+        .slide-inner {
+            position: relative;
+            overflow: hidden;
+            .slide-open:checked + .slide-item {
+                position: static;
+                opacity: 100;
             }
             
+            .slide-item {
+                position: absolute;
+                opacity: 0;
+                -webkit-transition: opacity 0.6s ease-out;
+                transition: opacity 0.6s ease-out;
+                img {
+                    @include tamaño(100%, auto);
+                    border-radius: 30px;
+                    @include display(block, null, null, null);
+                    max-width: 100%;
+                }
+                h5 {
+                    @include textos(500, 16px, null, null);
+                    margin: 0;
+                }
+                button {
+                    @include botones(5px, none, nth($colores, 8), null, nth($colores, 1));
+                    @include tamaño(35%, 3rem);
+                    @include textos(600, 24px, null, null);
+                    margin-left: 32%;
+                }
+            }
+            .slide-control {
+                @include botones(50%, none, nth($colores, 8), null, nth($colores, 13));
+                cursor: pointer;
+                @include display(none, null, null, null);
+                @include textos(600, 40px, 35px, center);
+                @include tamaño(40px, 40px);
+                position: absolute;
+                top: 50%;
+                z-index: 10;
+                -webkit-transform: translate(0, -50%);
+                cursor: pointer;
+                -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                &:hover {
+                    background: nth($colores, 13);
+                    color: nth($colores, 6);
+                }
+            }
+            .prev {
+                left: 2%;
+            }
+            .next {
+                right: 2%;
+            }
         }
     }
-        .contenedor-titulo {
-            @include display(flex, column wrap, flex-start, flex-end);
-            h3 {
-                @include textos(700, 32px);
-                text-align: right;
-                margin: 0;
-                @include tamaño(80%, null);
-            }
-            h4 {
-                @include textos(400, 20px);
-                color: nth($colores, 2);
-                text-align: right;
-                @include tamaño(80%, null);
-            }
-        
+    .contenedor-titulo {
+        @include display(flex, column wrap, flex-start, flex-end);
+        h3 {
+            @include textos(700, 32px, null, right);
+            margin: 0;
+            @include tamaño(80%, null);
+        }
+        h4 {
+            @include textos(400, 20px, null, right);
+            color: nth($colores, 2);
+            @include tamaño(80%, null);
+        }
     }
 }
 
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-6:checked ~ .control-6 {
+    display: block;
+}
 /*Fin Excursiones*/

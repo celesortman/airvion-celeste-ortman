@@ -78,9 +78,9 @@ header nav ul li a {
   width: 56%;
   font-weight: 700;
   font-size: 96px;
+  line-height: 120px;
   margin-bottom: 8px;
   margin-right: 10px;
-  line-height: 120px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -256,23 +256,37 @@ header nav ul li a {
   margin: auto;
   margin-bottom: 148px;
 }
-.excursiones div {
-  width: 50%;
+.excursiones .slide {
+  position: relative;
+  width: 60%;
 }
-.excursiones div .contenedor-excursiones {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
+.excursiones .slide .slide-inner {
+  position: relative;
+  overflow: hidden;
 }
-.excursiones div .contenedor-excursiones img {
+.excursiones .slide .slide-inner .slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+.excursiones .slide .slide-inner .slide-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+.excursiones .slide .slide-inner .slide-item img {
   width: 100%;
+  height: auto;
   border-radius: 30px;
+  display: block;
+  max-width: 100%;
 }
-.excursiones div .contenedor-excursiones h5 {
+.excursiones .slide .slide-inner .slide-item h5 {
   font-weight: 500;
   font-size: 16px;
+  margin: 0;
 }
-.excursiones div .contenedor-excursiones button {
+.excursiones .slide .slide-inner .slide-item button {
   border-radius: 5px;
   border: none;
   color: white;
@@ -283,10 +297,36 @@ header nav ul li a {
   font-size: 24px;
   margin-left: 32%;
 }
-.excursiones div .contenedor-excursiones button:hover {
-  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
-  transform: scale(1.2);
-  transition: all 250ms ease-out;
+.excursiones .slide .slide-inner .slide-control {
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: #2929292d;
+  cursor: pointer;
+  display: none;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 35px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.excursiones .slide .slide-inner .slide-control:hover {
+  background: #2929292d;
+  color: #EEEBEB;
+}
+.excursiones .slide .slide-inner .prev {
+  left: 2%;
+}
+.excursiones .slide .slide-inner .next {
+  right: 2%;
 }
 .excursiones .contenedor-titulo {
   display: flex;
@@ -304,9 +344,18 @@ header nav ul li a {
 .excursiones .contenedor-titulo h4 {
   font-weight: 400;
   font-size: 20px;
-  color: #757272;
   text-align: right;
+  color: #757272;
   width: 80%;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-6:checked ~ .control-6 {
+  display: block;
 }
 
 /*Fin Excursiones*/
@@ -349,17 +398,17 @@ header nav ul li a {
 .beneficios h3 {
   font-weight: 700;
   font-size: 32px;
-  margin: auto;
   text-align: center;
+  margin: auto;
   margin-bottom: 16px;
 }
 .beneficios h4 {
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
   color: #757272;
   width: 60%;
   margin: auto;
-  text-align: center;
   margin-bottom: 72px;
 }
 .beneficios .contenedor-beneficios {
@@ -417,18 +466,18 @@ header nav ul li a {
 .medios-de-pago h3 {
   font-weight: 700;
   font-size: 32px;
-  margin: auto;
   text-align: center;
+  margin: auto;
   margin-bottom: 16px;
   width: 100%;
 }
 .medios-de-pago h4 {
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
   color: #757272;
   width: 60%;
   margin: auto;
-  text-align: center;
   margin-bottom: 72px;
   width: 100%;
 }
@@ -448,9 +497,9 @@ header nav ul li a {
 .medios-de-pago div h5 {
   font-weight: 600;
   font-size: 20px;
+  text-align: center;
   margin-bottom: 16px;
   width: 348px;
-  text-align: center;
   margin-top: 0;
 }
 .medios-de-pago div .logo-transferencia {

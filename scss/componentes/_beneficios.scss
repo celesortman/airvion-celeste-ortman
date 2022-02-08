@@ -5,17 +5,15 @@
 .beneficios {
     margin-bottom: 148px;
     h3 {
-        @include textos(700, 32px);
+        @include textos(700, 32px, null, center);
         margin: auto;
-        text-align: center;
         margin-bottom: 16px;
     }
     h4 {
-        @include textos(400, 20px);
+        @include textos(400, 20px, null, center);
         color: nth($colores, 2);
         @include tamaño(60%, null);
         margin: auto;
-        text-align: center;
         margin-bottom: 72px;
     }
     .contenedor-beneficios {
@@ -31,7 +29,7 @@
             h5 {
                 @include display(flex, null, null, null);
                 margin: 16px 40px 20px 20px;
-                @include textos(600, 20px);
+                @include textos(600, 20px, null, null);
             }
             img {
                 @include tamaño(32px, null);
@@ -40,14 +38,13 @@
             .parrafo-card-beneficios {
                 color: nth($colores, 2);
                 margin: 0 40px 20px 20px;
-                @include textos(400, 20px);
+                @include textos(400, 20px, null, null);
                 @include display(flex, null, space-between, null);
             }
         }
     }
     .parrafo-inferior-beneficios {
-        @include textos(400, 24px);
-        text-align: center;
+        @include textos(400, 24px, null, center);
         @include tamaño(70%, null);
         margin: auto;
         color: nth($colores, 2);
