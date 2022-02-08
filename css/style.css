@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@400;500;600;700&family=Trocchi&display=swap");
 /*Inicio Header*/
 header {
@@ -634,6 +635,31 @@ body {
   font-family: "Poppins", sans-serif;
   color: #292929;
   background-color: #FDFDFD;
+}
+
+/*Inicio página registro*/
+.registro-iniciosesion {
+  background-color: #CEEBF1;
+}
+.registro-iniciosesion .menu-contenedor {
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.registro-iniciosesion .menu-contenedor .header-contenedor a {
+  width: 50%;
+}
+.registro-iniciosesion .menu-contenedor .header-contenedor .nav-ayuda {
+  margin-left: 980px;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

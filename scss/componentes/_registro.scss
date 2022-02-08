@@ -2,25 +2,22 @@
 
 .registro-iniciosesion {
     background-color: nth($colores, 4);
-    header {
+    .menu-contenedor {
+        @include tamaño(100%, 64px);
+        background-color: nth($colores, 8);
         @include display(flex, row nowrap, space-between, center);
-        nav {
-            background-color: nth($colores, 8);
-            @include tamaño(100%, 64px);
-            padding: 0 3% 0 3%;
-            @include display(flex, row nowrap, space-between, center);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            ul {
-                margin-left: 640px;
-                @include display(flex, row nowrap, flex-end, center);
-                li {
-                    @include display(flex, row nowrap, flex-end, center);
-                }
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        .header-contenedor {
+            a {
+                width: 50%;
             }
-
+            .nav-ayuda {
+                margin-left: 980px;
+                width: 50%;
+            }
         }
     }
     
