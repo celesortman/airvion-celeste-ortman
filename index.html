@@ -159,39 +159,72 @@
         </div>
     </section>
     <section id="excursiones" class="excursiones orden-carrousel" data-aos="fade-up">
-        <div>
-            <!--Aquí va un carrousel de fotos de excursiones-->
-            <div class="contenedor-excursiones">
-                <img src="src/assets/img/ski-sobre-nieve.jpg" alt="Ski sobre nieve">
-                <h5>Ski sobre nieve</h5>
-                <button>Ver más</button>
-            </div>
-            <!-- <div>
-                <img src="src/assets/img/ski.jpg" alt="Ski" width="468px">
-                <h5 class="excursiones">Ski sobre nieve</h5>
-                <button>Ver más</button>
-            </div>
-            <div>
-                <img src="src/assets/img/playas.jpg" alt="Playa" width="468px">
-                <h5 class="excursiones">Playas increíbles</h5>
-                <button>Ver más</button>
-            </div>
-            <div>
-                <img src="src/assets/img/buceo-en-el-mar.jpg" alt="Buceo en el mar" width="468px">
-                <h5 class="excursiones">Buceo en el mar</h5>
-                <button>Ver más</button>
-            </div>
-            <div>
-                <img src="src/assets/img/rafting.jpg" alt="rafting" width="468px">
-                <h5 class="excursiones">Rafting</h5>
-                <button>Ver más</button>
-            </div>
-            <div>
-                <img src="src/assets/img/aerosillas.jpg" alt="Paseo en aerosillas" width="468px">
-                <h5 class="excursiones">Paseo en Aerosillas</h5>
-                <button>Ver más</button>
-            </div> -->
-        </div>
+        <div class="slide">
+			<div class="slide-inner">
+				<input class="slide-open" type="radio" id="slide-1" 
+			 	     name="slide" aria-hidden="true" hidden="" checked="checked">
+				<div class="slide-item">
+					<img src="src/assets/img/ski-sobre-nieve.jpg">
+				</div>
+				<input class="slide-open" type="radio" id="slide-2" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="src/assets/img/ski.jpg">
+				</div>
+				<input class="slide-open" type="radio" id="slide-3" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="src/assets/img/playas.jpg">
+				</div>
+                <input class="slide-open" type="radio" id="slide-4" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="src/assets/img/buceo-en-el-mar.jpg">
+				</div>
+                <input class="slide-open" type="radio" id="slide-5" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="src/assets/img/rafting.jpg">
+				</div>
+                <input class="slide-open" type="radio" id="slide-6" 
+			 	     name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="src/assets/img/aerosillas.jpg">
+				</div>
+				<label for="slide-6" class="slide-control prev control-1">‹</label>
+				<label for="slide-2" class="slide-control next control-1">›</label>
+				<label for="slide-1" class="slide-control prev control-2">‹</label>
+				<label for="slide-3" class="slide-control next control-2">›</label>
+				<label for="slide-2" class="slide-control prev control-3">‹</label>
+				<label for="slide-4" class="slide-control next control-3">›</label>
+                <label for="slide-3" class="slide-control prev control-4">‹</label>
+				<label for="slide-5" class="slide-control next control-4">›</label>
+                <label for="slide-4" class="slide-control prev control-5">‹</label>
+                <label for="slide-6" class="slide-control next control-5">›</label>
+                <label for="slide-5" class="slide-control prev control-6">‹</label>
+                <label for="slide-1" class="slide-control next control-6">›</label>
+				<ol class="slide-indicador">
+					<li>
+						<label for="slide-1" class="slide-circulo">•</label>
+					</li>
+					<li>
+						<label for="slide-2" class="slide-circulo">•</label>
+					</li>
+					<li>
+						<label for="slide-3" class="slide-circulo">•</label>
+					</li>
+                    <li>
+						<label for="slide-4" class="slide-circulo">•</label>
+					</li>
+                    <li>
+						<label for="slide-5" class="slide-circulo">•</label>
+					</li>
+                    <li>
+						<label for="slide-6" class="slide-circulo">•</label>
+					</li>
+				</ol>
+			</div>
+		</div>
         <div class="contenedor-titulo">
             <h3>Excursiones exclusivas para cada destino</h3>
             <h4>Descubrí la cantidad de excursiones increíbles que tenemos para vos.</h4>
