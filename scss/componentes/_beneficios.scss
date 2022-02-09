@@ -3,41 +3,41 @@
 /*Inicio Beneficios*/
 
 .beneficios {
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
     h3 {
         @include textos(700, 32px, null, center);
         margin: auto;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     h4 {
         @include textos(400, 20px, null, center);
         color: nth($colores, 2);
         @include tamaño(60%, null);
         margin: auto;
-        margin-bottom: 72px;
+        margin-bottom: 4.5rem;
     }
     .contenedor-beneficios {
         @include tamaño(100%, null);
         @include display(flex, row nowrap, center, null);
-        margin-bottom: 72px;
+        margin-bottom: 4.5rem;
         .beneficios-card {
             @include display(flex, row wrap, space-between, center);
             background-color: nth($colores, 4);
             @include tamaño(30%, null);
             border-radius: 15px;
-            margin: 0px 20px 0px 0px;
+            margin: 0 2.5rem 0 0;
             h5 {
                 @include display(flex, null, null, null);
-                margin: 16px 40px 20px 20px;
+                margin: 1rem 2.5rem 1.25rem 1.25rem;
                 @include textos(600, 20px, null, null);
             }
             img {
                 @include tamaño(32px, null);
-                margin-right: 16px;
+                margin-right: 1rem;
             }
             .parrafo-card-beneficios {
                 color: nth($colores, 2);
-                margin: 0 40px 20px 20px;
+                margin: 0 2.5rem 1.25rem 1.25rem;
                 @include textos(400, 20px, null, null);
                 @include display(flex, null, space-between, null);
             }

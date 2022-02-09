@@ -6,7 +6,7 @@
     @include display(flex, row nowrap, space-between, null);
     @include tamaño(80%, null);
     margin: auto;
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
     .slide {
         position: relative;
         @include tamaño(60%, null);
@@ -45,7 +45,7 @@
                 cursor: pointer;
                 @include display(none, null, null, null);
                 @include textos(600, 40px, 35px, center);
-                @include tamaño(40px, 40px);
+                @include tamaño(2.5rem, 2.5rem);
                 position: absolute;
                 top: 50%;
                 z-index: 10;

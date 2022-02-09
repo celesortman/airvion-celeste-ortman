@@ -5,37 +5,37 @@
     @include tamaño(96%, 40rem);
     border-radius: 40px;
     margin: auto;
-    margin-top: 68px;
+    margin-top: 4.25rem;
     @include display(flex, row wrap, center, flex-start);
     h1 {
         width: 56%;
         @include textos(700, 96px, 120px, null);
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
         margin-right: 10px;
         @include display(flex, row wrap, flex-start, flex-start);
-        margin-top: 60px;
+        margin-top: 3.75rem;
     }
     img {
         border-radius: 20px;
-        margin-top: 80px;
+        margin-top: 5rem;
     }
     h2 {
         @include textos(500, 42px, null, null);
         @include display(flex, row wrap, center, center);
-        margin-top: -120px;
-        margin-left: -368px;
+        margin-top: -7.5rem;
+        margin-left: -23rem;
     }
 }
 .buscador-contenedor {
     background-color: nth($colores, 12);
     position: relative;
-    top: -94px;
+    top: -6rem;
     border-radius: 20px;
     margin: auto;
     @include tamaño(78%, 12rem);
     box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
     @include display(flex, null, space-around, center);
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
     .definir-detalles {
         @include display(flex, null, center, center);
         @media screen and (min-width: 969px) {
@@ -47,10 +47,10 @@
         }
         .secciones-buscador {
             @include display(inline-block, null, null, null);
-            padding: 0 16px 0 16px;
+            padding: 0 1rem 0 1rem;
             .button-search {
                 @include botones(12px, null, null, null, nth($colores, 1));
-                @include tamaño(64px, 112px);
+                @include tamaño(4rem, 7rem);
                 &:hover{
                     box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                     transform: scale(1.2);
@@ -58,7 +58,7 @@
                 } 
             }
             .formularios-buscador {
-                margin-bottom: 32px;
+                margin-bottom: 2rem;
                 @include display(flex, null, flex-start, center);
                 label {
                     @include textos(700, 24px, null, null);

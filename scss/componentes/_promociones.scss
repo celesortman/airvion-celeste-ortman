@@ -4,7 +4,7 @@
     @include display(flex, row nowrap, space-between, null);
     @include tamaño(80%, null);
     margin: auto;
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
     .contenedor-titulo {
         @include display(flex, column wrap, flex-start, flex-start);
         @include tamaño(50%, null);
@@ -34,9 +34,9 @@
                     @include textos(600, 24px, null, null);
                     @include tamaño(52%, 3rem);
                     @include display(flex, null, center, center);
-                    margin-top: -24px;
-                    margin-left: 92px;
-                    margin-bottom: 24px;
+                    margin-top: -1.5rem;
+                    margin-left: 5.75rem;
+                    margin-bottom: 1.5rem;
                     &:hover {
                         transform: scale(1.2);
                         transition: all 300ms ease-out;
@@ -44,12 +44,12 @@
                 }
                 h4 {
                     @include textos(500, 16px, null, null);
-                    margin-bottom: 8px;
+                    margin-bottom: 0.5rem;
                 }
                 h5 {
                     @include textos(500, 16px, null, null);
                     margin-top: 0;
-                    margin-bottom: 12px;
+                    margin-bottom: 0.75rem;
                 }
                 .cantidad-lugares {
                     @include textos(400, 14px, null, null);

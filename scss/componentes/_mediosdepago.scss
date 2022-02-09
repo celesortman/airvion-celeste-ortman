@@ -2,20 +2,19 @@
 
 .medios-de-pago {
     @include display(flex, row wrap, center, null);
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
     h3 {
         @include textos(700, 32px, null, center);
         margin: auto;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         @include tamaño(100%, null);
     }
     h4 {
         @include textos(400, 20px, null, center);
         color: nth($colores, 2);
-        @include tamaño(60%, null);
+        @include tamaño(100%, null);
         margin: auto;
-        margin-bottom: 72px;
-        width: 100%;
+        margin-bottom: 4.5rem;
     }
     div {
         background-color: nth($colores, 8);
@@ -23,36 +22,36 @@
         border-radius: 15px;
         @include display(flex, row wrap, center, center);
         @include tamaño(32%, 12rem);
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin-right: 1.25rem;
+        margin-bottom: 1.25rem;
         h5 {
             @include textos(600, 20px, null, center);
-            margin-bottom: 16px;
-            @include tamaño(348px, null);
+            margin-bottom: 1rem;
+            @include tamaño(21.75rem, null);
             margin-top: 0;
         }
         .logo-transferencia {
-            @include tamaño(84px, null);
+            @include tamaño(5.25rem, null);
             @include display(flex, row nowrap, null, null);
         }
         .logo-mercadopago {
-            @include tamaño(217px, null);
+            @include tamaño(13.5rem, null);
             @include display(flex, row nowrap, null, null);
         }
         .logo-mastercard {
-            @include tamaño(86px, null);
+            @include tamaño(5.25rem, null);
             @include display(flex, row nowrap, null, null);
         }
         .logo-visa {
-            @include tamaño(123px, null);
+            @include tamaño(7.75rem, null);
             @include display(flex, row nowrap, null, null);
         }
         .logo-pago-facil {
-            @include tamaño(80px, null);
+            @include tamaño(5rem, null);
             @include display(flex, row nowrap, null, null);
         }
         .logo-rapipago {
-            @include tamaño(173px, null);
+            @include tamaño(10.75rem, null);
             @include display(flex, row nowrap, null, null);
         }
     }

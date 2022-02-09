@@ -15,7 +15,7 @@ header {
         .menu-desplegable {
             display: none;
         }
-        @include tamaño(null, 64px);
+        @include tamaño(null, 4rem);
     }
     nav {
         padding: 0 3% 0 3%;

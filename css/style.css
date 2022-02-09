@@ -13,7 +13,7 @@ header {
 }
 @media screen and (min-width: 969px) {
   header {
-    height: 64px;
+    height: 4rem;
   }
   header .menu-desplegable {
     display: none;
@@ -69,7 +69,7 @@ header nav ul li a {
   height: 40rem;
   border-radius: 40px;
   margin: auto;
-  margin-top: 68px;
+  margin-top: 4.25rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -80,17 +80,17 @@ header nav ul li a {
   font-weight: 700;
   font-size: 96px;
   line-height: 120px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   margin-right: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 .home-contenedor img {
   border-radius: 20px;
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 .home-contenedor h2 {
   font-weight: 500;
@@ -99,14 +99,14 @@ header nav ul li a {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -120px;
-  margin-left: -368px;
+  margin-top: -7.5rem;
+  margin-left: -23rem;
 }
 
 .buscador-contenedor {
   background-color: #f9f9f9be;
   position: relative;
-  top: -94px;
+  top: -6rem;
   border-radius: 20px;
   margin: auto;
   width: 78%;
@@ -115,7 +115,7 @@ header nav ul li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 148px;
+  margin-bottom: 9.25rem;
 }
 .buscador-contenedor .definir-detalles {
   display: flex;
@@ -129,13 +129,13 @@ header nav ul li a {
 }
 .buscador-contenedor .definir-detalles .secciones-buscador {
   display: inline-block;
-  padding: 0 16px 0 16px;
+  padding: 0 1rem 0 1rem;
 }
 .buscador-contenedor .definir-detalles .secciones-buscador .button-search {
   border-radius: 12px;
   background-color: #4E63D4;
-  width: 64px;
-  height: 112px;
+  width: 4rem;
+  height: 7rem;
 }
 .buscador-contenedor .definir-detalles .secciones-buscador .button-search:hover {
   box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
@@ -143,7 +143,7 @@ header nav ul li a {
   transition: all 250ms ease-out;
 }
 .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -175,7 +175,7 @@ header nav ul li a {
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  margin-bottom: 148px;
+  margin-bottom: 9.25rem;
 }
 .promociones .contenedor-titulo {
   display: flex;
@@ -221,9 +221,9 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -24px;
-  margin-left: 92px;
-  margin-bottom: 24px;
+  margin-top: -1.5rem;
+  margin-left: 5.75rem;
+  margin-bottom: 1.5rem;
 }
 .promociones .contenedor-destinos .destinos-carrousel div .precio:hover {
   transform: scale(1.2);
@@ -232,13 +232,13 @@ header nav ul li a {
 .promociones .contenedor-destinos .destinos-carrousel div h4 {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .promociones .contenedor-destinos .destinos-carrousel div h5 {
   font-weight: 500;
   font-size: 16px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .promociones .contenedor-destinos .destinos-carrousel div .cantidad-lugares {
   font-weight: 400;
@@ -255,7 +255,7 @@ header nav ul li a {
   justify-content: space-between;
   width: 80%;
   margin: auto;
-  margin-bottom: 148px;
+  margin-bottom: 9.25rem;
 }
 .excursiones .slide {
   position: relative;
@@ -309,8 +309,8 @@ header nav ul li a {
   font-size: 40px;
   line-height: 35px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -366,10 +366,10 @@ header nav ul li a {
   flex-flow: row nowrap;
   width: 80%;
   margin: auto;
-  margin-bottom: 148px;
+  margin-bottom: 9.25rem;
 }
 .contenedor-nosotros .titulo-nosotros {
-  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 .contenedor-nosotros div {
   width: 50%;
@@ -394,14 +394,14 @@ header nav ul li a {
 /*Fin Sobre nosotros*/
 /*Inicio Beneficios*/
 .beneficios {
-  margin-bottom: 148px;
+  margin-bottom: 9.25rem;
 }
 .beneficios h3 {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
   margin: auto;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .beneficios h4 {
   font-weight: 400;
@@ -410,14 +410,14 @@ header nav ul li a {
   color: #757272;
   width: 60%;
   margin: auto;
-  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
 }
 .beneficios .contenedor-beneficios {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
 }
 .beneficios .contenedor-beneficios .beneficios-card {
   display: flex;
@@ -427,21 +427,21 @@ header nav ul li a {
   background-color: #CEEBF1;
   width: 30%;
   border-radius: 15px;
-  margin: 0px 20px 0px 0px;
+  margin: 0 2.5rem 0 0;
 }
 .beneficios .contenedor-beneficios .beneficios-card h5 {
   display: flex;
-  margin: 16px 40px 20px 20px;
+  margin: 1rem 2.5rem 1.25rem 1.25rem;
   font-weight: 600;
   font-size: 20px;
 }
 .beneficios .contenedor-beneficios .beneficios-card img {
   width: 32px;
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 .beneficios .contenedor-beneficios .beneficios-card .parrafo-card-beneficios {
   color: #757272;
-  margin: 0 40px 20px 20px;
+  margin: 0 2.5rem 1.25rem 1.25rem;
   font-weight: 400;
   font-size: 20px;
   display: flex;
@@ -462,14 +462,14 @@ header nav ul li a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: 148px;
+  margin-bottom: 9.25rem;
 }
 .medios-de-pago h3 {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
   margin: auto;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   width: 100%;
 }
 .medios-de-pago h4 {
@@ -477,10 +477,9 @@ header nav ul li a {
   font-size: 20px;
   text-align: center;
   color: #757272;
-  width: 60%;
-  margin: auto;
-  margin-bottom: 72px;
   width: 100%;
+  margin: auto;
+  margin-bottom: 4.5rem;
 }
 .medios-de-pago div {
   background-color: white;
@@ -492,44 +491,44 @@ header nav ul li a {
   align-items: center;
   width: 32%;
   height: 12rem;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .medios-de-pago div h5 {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 16px;
-  width: 348px;
+  margin-bottom: 1rem;
+  width: 21.75rem;
   margin-top: 0;
 }
 .medios-de-pago div .logo-transferencia {
-  width: 84px;
+  width: 5.25rem;
   display: flex;
   flex-flow: row nowrap;
 }
 .medios-de-pago div .logo-mercadopago {
-  width: 217px;
+  width: 13.5rem;
   display: flex;
   flex-flow: row nowrap;
 }
 .medios-de-pago div .logo-mastercard {
-  width: 86px;
+  width: 5.25rem;
   display: flex;
   flex-flow: row nowrap;
 }
 .medios-de-pago div .logo-visa {
-  width: 123px;
+  width: 7.75rem;
   display: flex;
   flex-flow: row nowrap;
 }
 .medios-de-pago div .logo-pago-facil {
-  width: 80px;
+  width: 5rem;
   display: flex;
   flex-flow: row nowrap;
 }
 .medios-de-pago div .logo-rapipago {
-  width: 173px;
+  width: 10.75rem;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -540,9 +539,9 @@ footer {
   background-color: #CEEBF1;
   width: 100%;
 }
-@media screen and (min-width: 969px) {
+@media screen and (min-width: 60.5rem) {
   footer {
-    height: 388px;
+    height: 24.25rem;
   }
   footer hr {
     display: none;
@@ -562,12 +561,12 @@ footer div .section-email {
 footer div .section-email img {
   display: flex;
   flex-flow: row wrap;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 footer div .section-email label {
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.5rem;
   width: 56%;
   display: flex;
   flex-flow: row wrap;
@@ -581,7 +580,7 @@ footer div .section-email input {
   font-size: 16px;
   width: 100%;
   height: 2.5rem;
-  margin: 20px 0 12px 0;
+  margin: 1.25rem 0 0.75rem 0;
 }
 footer div .section-email button {
   border-radius: 5px;
@@ -631,12 +630,14 @@ footer .copyright {
 }
 
 /*Fin Footer*/
+/*Inicio Body*/
 body {
   font-family: "Poppins", sans-serif;
   color: #292929;
   background-color: #FDFDFD;
 }
 
+/*Fin Body*/
 /*Inicio página registro*/
 .registro-iniciosesion {
   background-color: #CEEBF1;
@@ -655,7 +656,7 @@ body {
   z-index: 1;
 }
 .registro-iniciosesion .menu-contenedor .header-contenedor .nav-ayuda {
-  margin-left: 980px;
+  margin-left: 61.25rem;
   width: 50%;
 }
 .registro-iniciosesion section {

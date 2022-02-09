@@ -5,8 +5,8 @@
 footer {
     background-color: nth($colores, 4);
     @include tamaño(100%, null);
-    @media screen and (min-width: 969px) {
-        @include tamaño(null, 388px);
+    @media screen and (min-width: 60.5rem) {
+        @include tamaño(null, 24.25rem);
         hr {
             display: none;
         }
@@ -17,11 +17,11 @@ footer {
             @include display(flex, row wrap, flex-start, null);
             img {
                 @include display(flex, row wrap, null, null);
-                margin-right: 8px;
+                margin-right: 0.5rem;
             }
             label {
                 @include textos(600, 20px, null, null);
-                line-height: 24px;
+                line-height: 1.5rem;
                 @include tamaño(56%, null);
                 @include display(flex, row wrap, null, null);
             }
@@ -29,7 +29,7 @@ footer {
                 @include botones(5px, 1px solid nth($colores, 2), nth($colores, 2), null, nth($colores, 8));
                 @include textos(400, 16px, null, null);
                 @include tamaño(100%, 2.5rem);
-                margin: 20px 0 12px 0;
+                margin: 1.25rem 0 0.75rem 0;
             }
             button {
                 @include botones(5px, 2px solid nth($colores, 1), nth($colores, 1), null, nth($colores, 4));

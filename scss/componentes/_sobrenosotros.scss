@@ -4,9 +4,9 @@
     @include display(flex, row nowrap, null, null);
     @include tamaño(80%, null);
     margin: auto;
-    margin-bottom: 148px;
+    margin-bottom: 9.25rem;
     .titulo-nosotros {
-        padding-right: 20px;
+        padding-right: 1.25rem;
     }
     div {
         @include tamaño(50%, null);
