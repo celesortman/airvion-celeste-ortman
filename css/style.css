@@ -643,7 +643,7 @@ body {
 }
 .registro-iniciosesion .menu-contenedor {
   width: 100%;
-  height: 64px;
+  height: 4rem;
   background-color: white;
   display: flex;
   flex-flow: row nowrap;
@@ -660,13 +660,13 @@ body {
 }
 .registro-iniciosesion section {
   width: 95%;
-  height: 708px;
+  height: 44.25rem;
   display: flex;
   flex-flow: row wrap;
   background-color: white;
   margin: auto;
-  margin-top: 116px;
-  margin-bottom: 68px;
+  margin-top: 7.25rem;
+  margin-bottom: 4.25rem;
   border-radius: 30px;
   z-index: 0;
 }
@@ -675,7 +675,7 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   width: 50%;
-  height: 708px;
+  height: 44.25rem;
   border-radius: 30px;
   box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.25);
@@ -685,19 +685,20 @@ body {
   font-weight: 500;
   font-size: 42px;
   text-align: center;
-  margin-top: 44px;
+  margin-top: 2.75rem;
 }
 .registro-iniciosesion section .registro-contenedor-small img {
   margin: auto;
-  width: 532px;
+  width: 33.25rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario {
-  width: 516px;
-  height: 672px;
+  width: 32.25rem;
+  height: 42rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin: auto;
+  margin-top: 1.5rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario .formulario {
   display: flex;
@@ -707,28 +708,28 @@ body {
 .registro-iniciosesion section .contenedor-de-formulario .formulario label {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario .formulario input {
   border-radius: 12px;
   border: none;
   color: #757272;
   background-color: #EDF4F9;
-  width: 244px;
-  height: 48px;
+  width: 15.25rem;
+  height: 3rem;
   font-weight: 400;
   font-size: 14px;
 }
 .registro-iniciosesion section .contenedor-de-formulario .formulario p {
   font-weight: 400;
   font-size: 14px;
-  width: 244px;
-  margin-top: 12px;
+  width: 15.25rem;
+  margin-top: 0.75rem;
   color: #757272;
 }
 .registro-iniciosesion section .contenedor-de-formulario button {
-  width: 516px;
-  height: 48px;
+  width: 32.25rem;
+  height: 3rem;
   border-radius: 6px;
   border: none;
   color: white;
@@ -750,14 +751,14 @@ body {
   background-color: #395185;
   font-weight: 500;
   font-size: 20px;
-  width: 516px;
-  height: 48px;
+  width: 32.25rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-facebook span {
-  margin-left: 12px;
+  margin-left: 0.75rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-google {
   border-radius: 6px;
@@ -766,14 +767,14 @@ body {
   background-color: #F15744;
   font-weight: 500;
   font-size: 20px;
-  width: 516px;
-  height: 48px;
+  width: 32.25rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-google span {
-  margin-left: 12px;
+  margin-left: 0.75rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario .parrafos-inferiores-formulario {
   text-align: center;
@@ -783,7 +784,7 @@ body {
   margin: 0;
 }
 .registro-iniciosesion section .contenedor-de-formulario .parrafos-inferiores-formulario p a {
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario .parrafos-inferiores-formulario p a:hover {
   text-decoration: underline;
