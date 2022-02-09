@@ -1,7 +1,7 @@
 {
-  "name": "sass",
+  "name": "airvion",
   "version": "1.0.0",
-  "description": "",
+  "description": "landing page de viajes de egresados, permite armar un viaje de egresados acorde a cada grupo de gradudados",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
