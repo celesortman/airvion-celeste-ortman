@@ -3,56 +3,118 @@
 
 /*Inicio Header*/
 
-header {
-    background-color: nth($colores, 8);
-    @include tamaño(100%, null);
-    @include display(flex, row nowrap, null, null);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    @media screen and (min-width: 969px) {
-        .menu-desplegable {
-            display: none;
-        }
-        @include tamaño(null, 4rem);
-    }
-    nav {
-        padding: 0 3% 0 3%;
-        @include tamaño(100%, null);
-        @include display(flex, null, space-between, center);
-        ul {
-            @include tamaño(56%, null);
-            @include display(flex, row nowrap, space-between, null);
-            li {
-                list-style-type: none;
-                a {
-                    @include textos(400, 16px, null, null);
-                    color: nth($colores, 2);
-                    text-decoration: none;
-                    &:hover {
-                        color: nth($colores , 1);
-                        @include textos(600, null, null, null);
-                        transition: all 300ms linear;
-                        background-color: nth($colores, 16);
-                        padding: 8px 16px;
-                        border-radius: 6px;
+
+    @media screen and (max-width: 576px) {
+        header {
+            background-color: nth($colores, 8);
+            @include tamaño(100%, null);
+            @include display(flex, row nowrap, null, null);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            .header-desktop {
+                display: none;
+            }
+            .menu-desplegable {
+                height: 52px;
+                background-color: white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: fixed;
+                z-index: 1;
+                width: 100%;
+                input {
+                    &:checked  ~ ul{
+                        display:block;
+                    }
+                }
+                .input-menu {
+                display: none;
+                }
+                .menu-hamburguesa {
+                box-sizing: border-box;
+                display: inline-block;
+                border-radius: 5px;
+                width: 32px;
+                height: 32px;
+                line-height: 30px;
+                font-weight: bold;
+                text-align: center;
+                user-select: none;
+                margin-right: 72px;
+                }
+                .items-menu {
+                    display: none;
+                    margin-top: 384px;
+                    margin-left: -292px;
+                    width: 280px;
+                    height: auto;
+                    box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
+                    -webkit-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
+                    -moz-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
+                    z-index: 0;
+                    .navegacion-menu {
+                        display: block;
+                        background-color: white;
+                        margin: 0;
+                        padding: 20px 10px 10px 32px;
+                        list-style: none;
                     }
                 }
             }
         }
     }
-}
-
-
-
-.registro {
-    @include botones(8px, 2px solid nth($colores, 1), nth($colores, 1), 8px 12px, null);
-    @include textos(500, null, null, null);
-
-    &:hover {
-        @include botones(null, 2px solid nth($colores, 1), nth($colores, 8), null, nth($colores, 1));
-        transition: all 300ms ease-out;
+    @media screen and (min-width: 969px) {
+        .menu-desplegable {
+            display: none;
+        }
+        // @include tamaño(null, 4rem);
+        header {
+            background-color: nth($colores, 8);
+            @include tamaño(100%, null);
+            @include display(flex, row nowrap, null, null);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            .header-desktop {
+                padding: 0 3% 0 3%;
+                @include tamaño(100%, null);
+                @include display(flex, null, space-between, center);
+                ul {
+                    @include tamaño(56%, null);
+                    @include display(flex, row nowrap, space-between, null);
+                    li {
+                        list-style-type: none;
+                        a {
+                            @include textos(400, 16px, null, null);
+                            color: nth($colores, 2);
+                            text-decoration: none;
+                            &:hover {
+                                color: nth($colores , 1);
+                                @include textos(600, null, null, null);
+                                transition: all 300ms linear;
+                                background-color: nth($colores, 16);
+                                padding: 8px 16px;
+                                border-radius: 6px;
+                            }
+                        }
+                        .registro {
+                            @include botones(8px, 2px solid nth($colores, 1), nth($colores, 1), 8px 12px, null);
+                            @include textos(500, null, null, null);
+                            &:hover {
+                                @include botones(null, 2px solid nth($colores, 1), nth($colores, 8), null, nth($colores, 1));
+                                transition: all 300ms ease-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
     }
-}
+
 /*Fin Header*/
