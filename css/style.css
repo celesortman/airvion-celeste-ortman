@@ -41,10 +41,13 @@ header nav ul li a {
   color: #757272;
   text-decoration: none;
 }
-
-.inicio {
+header nav ul li a:hover {
   color: #4E63D4;
   font-weight: 600;
+  transition: all 300ms linear;
+  background-color: #ceebf198;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
 .registro {
@@ -148,6 +151,9 @@ header nav ul li a {
   justify-content: flex-start;
   align-items: center;
 }
+.buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador img {
+  margin-right: 8px;
+}
 .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador label {
   font-weight: 700;
   font-size: 24px;
@@ -228,6 +234,7 @@ header nav ul li a {
 .promociones .contenedor-destinos .destinos-carrousel div .precio:hover {
   transform: scale(1.2);
   transition: all 300ms ease-out;
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
 }
 .promociones .contenedor-destinos .destinos-carrousel div h4 {
   font-weight: 500;
@@ -297,6 +304,10 @@ header nav ul li a {
   font-weight: 600;
   font-size: 24px;
   margin-left: 32%;
+}
+.excursiones .slide .slide-inner .slide-item button:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: all 250ms ease-out;
 }
 .excursiones .slide .slide-inner .slide-control {
   border-radius: 50%;
@@ -394,6 +405,7 @@ header nav ul li a {
 /*Fin Sobre nosotros*/
 /*Inicio Beneficios*/
 .beneficios {
+  margin: auto;
   margin-bottom: 9.25rem;
 }
 .beneficios h3 {
@@ -417,6 +429,7 @@ header nav ul li a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin: auto;
   margin-bottom: 4.5rem;
 }
 .beneficios .contenedor-beneficios .beneficios-card {
@@ -427,7 +440,12 @@ header nav ul li a {
   background-color: #CEEBF1;
   width: 30%;
   border-radius: 15px;
+  margin: auto;
   margin: 0 2.5rem 0 0;
+}
+.beneficios .contenedor-beneficios .beneficios-card:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
 }
 .beneficios .contenedor-beneficios .beneficios-card h5 {
   display: flex;
@@ -493,6 +511,12 @@ header nav ul li a {
   height: 12rem;
   margin-right: 1.25rem;
   margin-bottom: 1.25rem;
+}
+.medios-de-pago div:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+  border: 4px solid #4E63D4;
+  background-color: #ceebf198;
 }
 .medios-de-pago div h5 {
   font-weight: 600;
@@ -592,6 +616,12 @@ footer div .section-email button {
   width: 100%;
   height: 3rem;
 }
+footer div .section-email button:hover {
+  border: 2px solid #4E63D4;
+  color: white;
+  background-color: #4E63D4;
+  transition: all 300ms ease-out;
+}
 footer div section {
   display: flex;
   flex-flow: column;
@@ -612,7 +642,7 @@ footer div section nav ul li a {
   text-decoration: none;
 }
 footer div section nav .conjunto-iconos-redes {
-  width: 70%;
+  width: 75%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -742,6 +772,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.registro-iniciosesion section .contenedor-de-formulario button:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: all 250ms ease-out;
+}
 .registro-iniciosesion section .contenedor-de-formulario a {
   text-decoration: none;
 }
@@ -758,6 +792,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.registro-iniciosesion section .contenedor-de-formulario a .contenedor-facebook:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: all 250ms ease-out;
+}
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-facebook span {
   margin-left: 0.75rem;
 }
@@ -773,6 +811,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.registro-iniciosesion section .contenedor-de-formulario a .contenedor-google:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: all 250ms ease-out;
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-google span {
   margin-left: 0.75rem;

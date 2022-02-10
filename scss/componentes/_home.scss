@@ -60,6 +60,9 @@
             .formularios-buscador {
                 margin-bottom: 2rem;
                 @include display(flex, null, flex-start, center);
+                img {
+                    margin-right: 8px;
+                }
                 label {
                     @include textos(700, 24px, null, null);
                 }

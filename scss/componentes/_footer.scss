@@ -35,6 +35,10 @@ footer {
                 @include botones(5px, 2px solid nth($colores, 1), nth($colores, 1), null, nth($colores, 4));
                 @include textos(600, 16px, null, null);
                 @include tamaño(100%, 3rem);
+                &:hover {
+                    @include botones(null, 2px solid nth($colores, 1), nth($colores, 8), null, nth($colores, 1));
+                    transition: all 300ms ease-out;
+                }
             }
         }
         section {
@@ -53,7 +57,7 @@ footer {
                     }
                 }
                 .conjunto-iconos-redes {
-                    @include tamaño(70%, null);
+                    @include tamaño(75%, null);
                     @include display(flex, row nowrap, space-between, null);
                 }
             }

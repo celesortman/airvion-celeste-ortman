@@ -24,6 +24,12 @@
         @include tamaño(32%, 12rem);
         margin-right: 1.25rem;
         margin-bottom: 1.25rem;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 300ms ease-out;
+            border: 4px solid nth($colores, 1);
+            background-color: nth($colores, 16);
+        }
         h5 {
             @include textos(600, 20px, null, center);
             margin-bottom: 1rem;

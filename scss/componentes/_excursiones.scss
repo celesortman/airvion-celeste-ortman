@@ -38,6 +38,10 @@
                     @include tamaño(35%, 3rem);
                     @include textos(600, 24px, null, null);
                     margin-left: 32%;
+                    &:hover{
+                        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+                        transition: all 250ms ease-out;
+                    } 
                 }
             }
             .slide-control {
