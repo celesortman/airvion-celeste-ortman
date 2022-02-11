@@ -173,6 +173,7 @@
                         @include textos(400, 14px, null, null);
                         box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
                         @include tamaño(100%, 2.5rem);
+                        padding-left: 16px;
                     }
                 }
                 .vertical-line {
