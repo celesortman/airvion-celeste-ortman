@@ -72,6 +72,9 @@
                     @include tamaño(15.25rem, 3rem);
                     @include textos(400, 14px, null, null);
                     padding-left: 8px;
+                    &:focus {
+                        border:1px solid nth($colores, 1);
+                    }
                 }
                 p {
                     @include textos(400, 14px, null, null);

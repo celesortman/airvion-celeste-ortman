@@ -931,6 +931,9 @@ body {
   font-size: 14px;
   padding-left: 8px;
 }
+.registro-iniciosesion section .contenedor-de-formulario .formulario input:focus {
+  border: 1px solid #4E63D4;
+}
 .registro-iniciosesion section .contenedor-de-formulario .formulario p {
   font-weight: 400;
   font-size: 14px;
