@@ -60,7 +60,7 @@
         <div class="definir-detalles">
             <div class="secciones-buscador">
                 <div class="formularios-buscador">
-                    <img src="./src/assets/img/ubicacion.png" alt="icono de ubicación" width="15.55px" height="19.95px">
+                    <img src="./src/assets/img/ubicacion.png" alt="icono de ubicación" class="iconos-busqueda">
                     <label for="destino">¿A dónde vas?</label>
                 </div>
                 <div>
@@ -70,7 +70,7 @@
             <div class="vertical-line"></div>
             <div class="secciones-buscador">
                 <div class="formularios-buscador">
-                    <img src="./src/assets/img/calendario.png" alt="icono de calendario" width="17.5px" height="20px">
+                    <img src="./src/assets/img/calendario.png" alt="icono de calendario" class="iconos-busqueda">
                     <label for="fecha">¿Cuándo querés ir?</label>
                 </div>
                 <div>
@@ -80,7 +80,7 @@
             <div class="vertical-line"></div>
             <div class="secciones-buscador">
                 <div class="formularios-buscador">
-                    <img src="./src/assets/img/personas.png" alt="icono de personas" width="25px" height="20px">
+                    <img src="./src/assets/img/personas.png" alt="icono de personas" class="iconos-busqueda">
                     <label for="cuantos-van">¿Cuántos van a ir?</label>
                 </div>
                 <div>
@@ -88,75 +88,73 @@
                 </div>
             </div>
             <div class="secciones-buscador">
-                <img class="button-search" src="./src/assets/svg/lupa.svg" alt="Icono lupa" width="52px" height="52px">
+                <img class="button-search" src="./src/assets/svg/lupa.svg" alt="Icono lupa">
             </div>
             <div>
                 <button class="button-mobile-buscar">Buscar</button>
             </div>
         </div>
     </section>
+    
     <section id="promociones" class="promociones" data-aos="fade-up">
         <div class="contenedor-titulo">
             <h3>Ofertas y destinos destacados</h3>
             <h4>Encontrá los mejores precios para tu viaje soñado.</h4>
         </div>
         <!--Aquí va un carrousel con fotos de destinos-->
-        <div class="contenedor-destinos">
-            <div class="destinos-carrousel">
+        <div class="slider">
+            <ul>
+                <li>
+                <div>
                 <img src="./src/assets/img/bariloche.jpg" alt="Ciudad de Bariloche">
-                <div>
-                    <p class="precio">$150.000</p>
-                    <h4>San Carlos de Bariloche</h4>
-                    <h5>Argentina</h5>
-                    <p class="cantidad-lugares">21 lugares para visitar</p>
+                <p class="precio">$150.000</p>
+                <h4>San Carlos de Bariloche</h4>
+                <h5>Argentina</h5>
+                <p class="cantidad-lugares">23 lugares para visitar</p>
                 </div>
-            </div>
-            <div class="destinos-carrousel">
-                <img src="./src/assets/img/mendoza.jpg" alt="Ciudad de Mendoza">
                 <div>
-                    <p class="precio">$100.000</p>
-                    <h4>Mendoza</h4>
-                    <h5>Argentina</h5>
-                    <p class="cantidad-lugares">23 lugares para visitar</p>
+                    <img src="./src/assets/img/mendoza.jpg" alt="Ciudad de Mendoza">
+                <p class="precio">$100.000</p>
+                <h4>Mendoza</h4>
+                <h5>Argentina</h5>
+                <p class="cantidad-lugares">23 lugares para visitar</p>
                 </div>
-            </div>
-            <!-- <div>
-                <img class="imagen-destino" src="./src/assets/img/mar-del-plata.jpg" alt="Ciudad de Mar del Plata" width="268px">
-                <div>
-                    <p class="precio">$80.000</p>
-                    <h4 class="ciudad">Mar del Plata</h4>
-                    <h5 class="pais">Argentina</h5>
-                    <p class="cantidad-lugares">15 lugares para visitar</p>
-                </div>
-            </div>
-            <div>
-                <img class="imagen-destino" src="./src/assets/img/carlos-paz.jpg" alt="Ciudad de Villa Carlos Paz" width="268px">
-                <div>
-                    <p class="precio">$70.000</p>
-                    <h4 class="ciudad">Villa Carlos Paz</h4>
-                    <h5 class="pais">Argentina</h5>
-                    <p class="cantidad-lugares">20 lugares para visitar</p>
-                </div>
-            </div>
-            <div>
-                <img class="imagen-destino" src="./src/assets/img/rio-de-janeiro.jpg" alt="Ciudad de Río de Janeiro" width="268px">
-                <div>
-                    <p class="precio">$180.000</p>
-                    <h4 class="ciudad">Río de Janeiro</h4>
-                    <h5 class="pais">Brasil</h5>
-                    <p class="cantidad-lugares">28 lugares para visitar</p>
-                </div>
-            </div>
-            <div>
-                <img class="imagen-destino" src="./src/assets/img/camboriu.jpg" alt="Ciudad de Camboriú" width="268px">
-                <div>
-                    <p class="precio">$130.000</p>
-                    <h4 class="ciudad">Camboriú</h4>
-                    <h5 class="pais">Brasil</h5>
-                    <p class="cantidad-lugares">25 lugares para visitar</p>
-                </div>
-            </div> -->
-        </div>
+                </li>
+                <li>
+                    <div>
+                        <img class="imagen-destino" src="./src/assets/img/mar-del-plata.jpg" alt="Ciudad de Mar del Plata">
+                        <p class="precio">$80.000</p>
+                        <h4 class="ciudad">Mar del Plata</h4>
+                        <h5 class="pais">Argentina</h5>
+                        <p class="cantidad-lugares">15 lugares para visitar</p>
+                    </div>
+                    <div>
+                        <img class="imagen-destino" src="./src/assets/img/carlos-paz.jpg" alt="Ciudad de Villa Carlos Paz">
+                        <p class="precio">$70.000</p>
+                        <h4 class="ciudad">Villa Carlos Paz</h4>
+                        <h5 class="pais">Argentina</h5>
+                        <p class="cantidad-lugares">20 lugares para visitar</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img class="imagen-destino" src="./src/assets/img/rio-de-janeiro.jpg" alt="Ciudad de Río de Janeiro">
+                        <p class="precio">$180.000</p>
+                        <h4 class="ciudad">Río de Janeiro</h4>
+                        <h5 class="pais">Brasil</h5>
+                        <p class="cantidad-lugares">28 lugares para visitar</p>
+                    </div>
+                    <div>
+                        <img class="imagen-destino" src="./src/assets/img/camboriu.jpg" alt="Ciudad de Camboriú">            
+                        <p class="precio">$130.000</p>
+                        <h4 class="ciudad">Camboriú</h4>
+                        <h5 class="pais">Brasil</h5>
+                        <p class="cantidad-lugares">25 lugares para visitar</p>
+                    </div>
+            </li>
+        </ul>
+</div>
+        
     </section>
     <section id="excursiones" class="excursiones orden-carrousel" data-aos="fade-up">
         <div class="slide">
@@ -347,7 +345,7 @@
                 <h4>Sobre nosotros</h4>
                     <ul>
                         <li><a href="#sobreNosotros">¿Quiénes somos?</a></li>
-                        <li>Trabajos</li>
+                        <li><a href="./src/views/404.html">Trabajos</a></li>
                         <li>Términos y Condiciones</li>
                         <li>Politicas de privacidad</li>
                     </ul>

@@ -313,8 +313,9 @@
     justify-content: flex-start;
     align-items: center;
   }
-  .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador img {
+  .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador .iconos-busqueda {
     margin-right: 8px;
+    height: 20px;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador label {
     font-weight: 700;
@@ -365,21 +366,34 @@
   color: #757272;
   width: 60%;
 }
-.promociones .contenedor-destinos {
+.promociones .slider {
   width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+.promociones .slider ul {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  width: 300%;
+  animation: cambio 20s infinite;
+  animation-direction: alternate;
+}
+.promociones .slider ul li {
+  width: 100%;
+  list-style: none;
   display: flex;
   flex-flow: row nowrap;
 }
-.promociones .contenedor-destinos .destinos-carrousel {
+.promociones .slider ul li div {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+  flex-flow: row wrap;
 }
-.promociones .contenedor-destinos .destinos-carrousel img {
-  width: 90%;
+.promociones .slider ul li div img {
+  width: 16.75rem;
   border-radius: 25px;
 }
-.promociones .contenedor-destinos .destinos-carrousel div .precio {
+.promociones .slider ul li div .precio {
   border-radius: 6px;
   color: white;
   background-color: #4E63D4;
@@ -394,29 +408,52 @@
   margin-left: 5.75rem;
   margin-bottom: 1.5rem;
 }
-.promociones .contenedor-destinos .destinos-carrousel div .precio:hover {
+.promociones .slider ul li div .precio:hover {
   transform: scale(1.2);
   transition: all 300ms ease-out;
   box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
 }
-.promociones .contenedor-destinos .destinos-carrousel div h4 {
+.promociones .slider ul li div h4 {
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  width: 100%;
 }
-.promociones .contenedor-destinos .destinos-carrousel div h5 {
+.promociones .slider ul li div h5 {
   font-weight: 500;
   font-size: 16px;
-  margin-top: 0;
+  margin-top: 4px;
   margin-bottom: 0.75rem;
+  width: 100%;
 }
-.promociones .contenedor-destinos .destinos-carrousel div .cantidad-lugares {
+.promociones .slider ul li div .cantidad-lugares {
   font-weight: 400;
   font-size: 14px;
   color: #757272;
   margin-top: 0;
+  width: 100%;
 }
 
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  60% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
 /*Fin Promociones*/
 /*Inicio Excursiones*/
 .excursiones {
@@ -1035,6 +1072,83 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+}
+
+/*404*/
+.menu-contenedor {
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.menu-contenedor .header-contenedor {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3% 0 3%;
+}
+.menu-contenedor .header-contenedor .nav-ayuda {
+  margin-left: 61.25rem;
+  width: 50%;
+}
+.menu-contenedor .header-contenedor .nav-ayuda li {
+  list-style-type: none;
+}
+.menu-contenedor .header-contenedor .nav-ayuda li a {
+  color: #757272;
+  text-decoration: none;
+}
+
+.background-404 {
+  background-color: white;
+}
+
+.not-found-contenedor {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-contenedor img {
+  width: 38%;
+  margin: auto;
+  margin-top: 68px;
+}
+.not-found-contenedor h1 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 12px 0 12px 0;
+}
+.not-found-contenedor button {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: #4E63D4;
+  width: 220px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+.not-found-contenedor button:hover {
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+  transition: all 250ms ease-out;
+}
+.not-found-contenedor button a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

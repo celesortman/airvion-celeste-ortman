@@ -1,0 +1,59 @@
+/*404*/
+
+.menu-contenedor {
+    @include tamaño(100%, 4rem);
+    background-color: nth($colores, 8);
+    @include display(flex, row nowrap, space-between, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .header-contenedor {
+        @include tamaño(100%, 4rem);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3% 0 3%;
+        .nav-ayuda {
+            margin-left: 61.25rem;
+            width: 50%;
+            li {
+                list-style-type: none;
+                a {
+                    color: nth($colores, 2);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.background-404 {
+    background-color: nth($colores, 8);
+}
+.not-found-contenedor {
+    @include tamaño(100%, null);
+    @include display(flex, column wrap, center, center);
+    img {
+        @include tamaño(38%, null);
+        margin: auto;
+        margin-top: 68px;
+    }
+    h1 {
+        @include textos(700, 32px, null, center);
+        margin: 12px 0 12px 0;
+    }
+    button {
+        @include botones(6px, none, nth($colores, 8), null, nth($colores, 1));
+        @include tamaño(220px, 40px);
+        @include textos(600, 16px, null, center);
+        &:hover{
+            box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+            transition: all 250ms ease-out;
+        }
+        a {
+            text-decoration: none;
+            color: nth($colores, 8);
+        }
+    }
+}

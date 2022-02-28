@@ -19,46 +19,78 @@
             @include tamaño(60%, null);
         }
     }
-    .contenedor-destinos {
-        @include tamaño(60%, null);
-        @include display(flex, row nowrap, null, null);
-        .destinos-carrousel {
-            @include display(flex, column wrap, flex-start, null);
-            img {
-                @include tamaño(90%, null);
-                border-radius: 25px;
-            }
-            div {
-                .precio {
-                    @include botones(6px, null, nth($colores, 8), null, nth($colores, 1));
-                    @include textos(600, 24px, null, null);
-                    @include tamaño(52%, 3rem);
-                    @include display(flex, null, center, center);
-                    margin-top: -1.5rem;
-                    margin-left: 5.75rem;
-                    margin-bottom: 1.5rem;
-                    &:hover {
-                        transform: scale(1.2);
-                        transition: all 300ms ease-out;
-                        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+    .slider {
+        width: 60%;
+        margin: auto;
+        overflow: hidden;
+        ul {
+            margin-top: 0;
+            padding: 0;
+            display: flex;
+            width: 300%;
+            animation: cambio 20s infinite;
+            animation-direction: alternate;
+            li {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                flex-flow: row nowrap;
+                
+                div {
+                    display: flex;
+                    flex-flow: row wrap;
+                    img {
+                        width: 16.75rem;
+                        border-radius: 25px;
                     }
-                }
-                h4 {
-                    @include textos(500, 16px, null, null);
-                    margin-bottom: 0.5rem;
-                }
-                h5 {
-                    @include textos(500, 16px, null, null);
-                    margin-top: 0;
-                    margin-bottom: 0.75rem;
-                }
-                .cantidad-lugares {
-                    @include textos(400, 14px, null, null);
-                    color: nth($colores, 2);
-                    margin-top: 0;
+                    .precio {
+                        @include botones(6px, null, nth($colores, 8), null, nth($colores, 1));
+                        @include textos(600, 24px, null, null);
+                        @include tamaño(52%, 3rem);
+                        @include display(flex, null, center, center);
+                        margin-top: -1.5rem;
+                        margin-left: 5.75rem;
+                        margin-bottom: 1.5rem;
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: all 300ms ease-out;
+                            box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+                        }
+                    }
+                    h4 {
+                        @include textos(500, 16px, null, null);
+                        margin: 0;
+                        width: 100%;
+                    }
+                    h5 {
+                        @include textos(500, 16px, null, null);
+                        margin-top: 4px;
+                        margin-bottom: 0.75rem;
+                        width: 100%;
+                    }
+                    .cantidad-lugares {
+                        @include textos(400, 14px, null, null);
+                        color: nth($colores, 2);
+                        margin-top: 0;
+                        width: 100%;
+                    }
                 }
             }
         }
     }
+    
+}
+
+
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+
+    35% { margin-left: -100%;}
+    60% { margin-left: -100%;}
+
+    65% { margin-left: -200%;}
+    100% { margin-left: -200%;}
 }
 /*Fin Promociones*/

@@ -160,8 +160,9 @@
                 .formularios-buscador {
                     margin-bottom: 2rem;
                     @include display(flex, null, flex-start, center);
-                    img {
+                    .iconos-busqueda {
                         margin-right: 8px;
+                        height: 20px;
                     }
                     label {
                         @include textos(700, 24px, null, null);
