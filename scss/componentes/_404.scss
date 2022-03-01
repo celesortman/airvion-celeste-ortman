@@ -10,14 +10,14 @@
     z-index: 1;
     .header-contenedor {
         @include tamaño(100%, 4rem);
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        @include display(flex, row nowrap, space-between, center);
         padding: 0 3% 0 3%;
+        @media screen and (max-width: 576px) {
+            
+        }
         .nav-ayuda {
+            @include tamaño(50%, null);
             margin-left: 61.25rem;
-            width: 50%;
             li {
                 list-style-type: none;
                 a {
@@ -38,15 +38,29 @@
         @include tamaño(38%, null);
         margin: auto;
         margin-top: 68px;
+        @media screen and (max-width: 576px) {
+            @include tamaño(70%, null);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include tamaño(50%, null);
+        }
     }
     h1 {
         @include textos(700, 32px, null, center);
-        margin: 12px 0 12px 0;
+        margin: 0.75rem 0 0.75rem 0;
+        @media screen and (max-width: 576px) {
+            @include textos(700, 20px, null, center);
+            margin: 1rem 0 1rem 0;
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px)  {
+            @include textos(700, 28px, null, center);
+            margin: 1rem 0 1rem 0;
+        }
     }
     button {
         @include botones(6px, none, nth($colores, 8), null, nth($colores, 1));
-        @include tamaño(220px, 40px);
-        @include textos(600, 16px, null, center);
+        @include tamaño(13.75rem, 2.5rem);
+        @include textos(600, 1rem, null, center);
         &:hover{
             box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
             transition: all 250ms ease-out;
@@ -54,6 +68,13 @@
         a {
             text-decoration: none;
             color: nth($colores, 8);
+        }
+        @media screen and (max-width: 576px) {
+            @include tamaño(10.75rem, 2.5rem);
+            @include textos(600, 1rem, null, center);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include tamaño(12.75rem, 2.5rem);
         }
     }
 }

@@ -7,9 +7,16 @@
     @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 9.25rem;
+    @media screen and (max-width: 576px) {
+        @include display(flex, column-reverse wrap, null, null);
+        margin-bottom: 3.75rem;
+    }
     .slide {
         position: relative;
         @include tamaño(60%, null);
+        @media screen and (max-width: 576px) {
+            @include tamaño(100%, null);
+        }
         .slide-inner {
             position: relative;
             overflow: hidden;
@@ -31,7 +38,7 @@
                 }
                 h5 {
                     @include textos(500, 16px, null, null);
-                    margin: 0;
+                    margin: 8px 0 8px 0;
                 }
                 button {
                     @include botones(5px, none, nth($colores, 8), null, nth($colores, 1));
@@ -42,6 +49,11 @@
                         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                         transition: all 250ms ease-out;
                     } 
+                    @media screen and (min-width: 577px) and (max-width: 967px) {
+                        @include tamaño(50%, 2.5rem);
+                        @include textos(600, 20px, null, null);
+                        margin-left: 25%;
+                    }
                 }
             }
             .slide-control {
@@ -51,8 +63,8 @@
                 @include textos(600, 40px, 35px, center);
                 @include tamaño(2.5rem, 2.5rem);
                 position: absolute;
-                top: 50%;
-                z-index: 10;
+                top: 40%;
+                
                 -webkit-transform: translate(0, -50%);
                 cursor: pointer;
                 -ms-transform: translate(0, -50%);
@@ -60,6 +72,13 @@
                 &:hover {
                     background: nth($colores, 13);
                     color: nth($colores, 6);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include textos(600, 28px, 35px, center);
+                    @include tamaño(2rem, 2rem);
+                    position: absolute;
+                    top: 30%;
+                    
                 }
             }
             .prev {
@@ -76,11 +95,27 @@
             @include textos(700, 32px, null, right);
             margin: 0;
             @include tamaño(80%, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(80%, null);
+                @include textos(700, 28px, null, right);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include textos(700, 28px, null, null);
+                @include tamaño(100%, null);
+            }
         }
         h4 {
             @include textos(400, 20px, null, right);
             color: nth($colores, 2);
             @include tamaño(80%, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(90%, null);
+                @include textos(400, 16px, null, right);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(90%, null);
+                @include textos(400, 18px, null, null);
+            }
         }
     }
 }

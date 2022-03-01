@@ -5,36 +5,71 @@
 footer {
     background-color: nth($colores, 4);
     @include tamaño(100%, null);
-    @media screen and (min-width: 60.5rem) {
-        @include tamaño(null, 24.25rem);
-        hr {
-            display: none;
-        }
-    }
+    margin-left: 0;
     div {
         @include display(flex, row nowrap, space-around, flex-start);
+        @media screen and (max-width: 576px) {
+            @include display(flex, column wrap, space-around, flex-start);
+        }
         .section-email {
             @include display(flex, row wrap, flex-start, null);
+            @media screen and (max-width: 576px) {
+                margin-top: 20px;
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                margin-top: 32px;
+            }
+            h3 {
+                @media screen and (max-width: 576px) {
+                    display: none;
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    display: none;
+                }
+            }
             img {
                 @include display(flex, row wrap, null, null);
                 margin-right: 0.5rem;
+                @include tamaño(48px, 48px);
             }
             label {
                 @include textos(600, 20px, null, null);
                 line-height: 1.5rem;
                 @include tamaño(56%, null);
                 @include display(flex, row wrap, null, null);
+                @media screen and (max-width: 576px) {
+                    @include tamaño(70%, null);
+                    @include textos(700, 20px, null, null);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include tamaño(70%, null);
+                    @include textos(700, 20px, null, null);
+                }
             }
             input {
                 @include botones(5px, 1px solid nth($colores, 2), nth($colores, 2), null, nth($colores, 8));
                 @include textos(400, 16px, null, null);
                 @include tamaño(100%, 2.5rem);
                 margin: 1.25rem 0 0.75rem 0;
+                padding-left: 16px;
+                @media screen and (max-width: 576px) {
+                    @include tamaño(20.5rem, 2.5rem);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include textos(400, 14px, null, null);
+                    @include tamaño(100%, 2rem);
+                }
             }
             button {
                 @include botones(5px, 2px solid nth($colores, 1), nth($colores, 1), null, nth($colores, 4));
                 @include textos(600, 16px, null, null);
                 @include tamaño(100%, 3rem);
+                @media screen and (max-width: 576px) {
+                    @include tamaño(21.75rem, 3rem);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include tamaño(100%, 2.5rem);
+                }
                 &:hover {
                     @include botones(null, 2px solid nth($colores, 1), nth($colores, 8), null, nth($colores, 1));
                     transition: all 300ms ease-out;
@@ -44,33 +79,97 @@ footer {
         section {
             @include display(flex, column, flex-start, null);
             @include tamaño(26%, null);
-            nav {
+            @media screen and (max-width: 576px) {
+                @include tamaño(70%, null);
+                margin: auto;
+            }
+            .contacto {
+                margin-top: 20px;
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    margin-top: 0;
+                }
                 ul {
                     @include display(flex, column wrap, flex-start, null);
                     padding: 0;
+                    margin-top: 8px;
                     li {
                         list-style-type: none;
+                        @media screen and (max-width: 576px) {
+                            @include textos(400, 14px, null, null);
+                        }
                         a {
                             color: nth($colores, 3);
                             text-decoration: none;
+                            @media screen and (max-width: 576px) {
+                                @include textos(400, 14px, null, null);
+                            }
                         }
                     }
                 }
+                h3 {
+                    @include textos(700, 32px, null, null);
+                }
+                h4 {
+                    @include textos(700, 20px, null, left);
+                    @media screen and (max-width: 576px) {
+                        @include textos(700, 16px, null, left);
+                    }
+                    @media screen and (min-width: 577px) and (max-width: 967px) {
+                        @include textos(700, 16px, null, left);
+                    }
+                }
+            }
+            .redes {
+                @include display(flex, column wrap, flex-start, null);
                 .conjunto-iconos-redes {
-                    @include tamaño(75%, null);
+                    @include tamaño(80%, null);
                     @include display(flex, row nowrap, space-between, null);
+                    @media screen and (max-width: 576px) {
+                        @include tamaño(100%, null);
+                    }
+                    @media screen and (min-width: 577px) and (max-width: 967px) {
+                        margin-top: 0;
+                    }
+                }
+                h4 {
+                    @include textos(700, 20px, null, null);
+                    @media screen and (max-width: 576px) {
+                        @include textos(700, 16px, null, left);
+                        width: 100%;
+                        margin: 0;
+                    }
+                    @media screen and (min-width: 577px) and (max-width: 967px) {
+                        @include textos(600, 14px, null, left);
+                        margin-bottom: 0;
+                    }
                 }
             }
             h3 {
                 @include textos(700, 32px, null, null);
             }
-            h4 {
-                @include textos(700, 20px, null, null);
+            
+            ul {
+                @include display(flex, row nowrap, flex-start, null);
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    a {
+                        color: nth($colores, 3);
+                        text-decoration: none;
+                    }
+                }
             }
+            
         }
     }
     .copyright {
         text-align: center;
+        @media screen and (max-width: 576px) {
+            width: 18rem;
+            margin: auto;
+            @include textos(400, 14px, null, center);
+            margin-top: 24px;
+        }
     }
 }
 /*Fin Footer*/

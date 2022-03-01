@@ -7,19 +7,17 @@
         width: 372px;
         height: 680px;
         margin: auto;
-        margin-top: 38px;
+        margin-top: 68px;
         z-index: -1;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        .h1 {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 48px;
-            width: 268px;
+        h1 {
             margin-top: 22px;
             margin-left: 16px;
+            @include textos(700, 36px, 48px, null);
+            width: 342px;
         }
         h2 {
             font-weight: 500;
@@ -65,8 +63,12 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    .iconos-busqueda {
+                        height: 16px;
+                        margin-right: 8px;
+                    }
                     label {
-                        font-weight: 700;
+                        font-weight: 600;
                         font-size: 20px;
                     }
                 }
@@ -81,12 +83,23 @@
                         font-weight: 400;
                         font-size: 14px;
                         box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
+                        padding-left: 16px;
                     }
-                    .button-mobile-buscar {
-                        @include botones(12px, null, nth($colores, 8), null, nth($colores, 1));
-                        @include textos(500, 24px, null, null);
-                        @include tamaño(308px, 56px);
-                        margin: -8px 10px;
+                    
+                    .button {
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            @media screen and (min-width: 968px) {
+                                display: none;
+                            }
+                            @media screen and (max-width: 576px) {
+                                @include botones(12px, none, nth($colores, 8), null, nth($colores, 1));
+                                @include tamaño(19.25rem, 3.5rem);
+                                @include textos(500, 24px, null, null);
+                            }
+                            
+                        }
                     }
                 }
                 .vertical-line {
@@ -96,6 +109,93 @@
                     display: none;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 967px) {
+    .home-contenedor {
+        background-color: nth($colores, 4);
+        @include tamaño(96%, 29rem);
+        border-radius: 24px;
+        margin: auto;
+        margin-top: 4.25rem;
+        @include display(flex, row wrap, center, flex-start);
+        h1 {
+            width: 56%;
+            @include textos(700, 56px, 80px, null);
+            margin-bottom: 0.5rem;
+            margin-right: 45px;
+            @include display(flex, row wrap, flex-start, flex-start);
+            margin-top: 3rem;
+        }
+        img {
+            border-radius: 20px;
+            margin-top: 3rem;
+            width: 200px;
+        }
+        h2 {
+            @include textos(500, 28px, null, null);
+            @include display(flex, row wrap, center, center);
+            margin-top: -6.75rem;
+            margin-left: -13rem;
+        }
+    }
+    .buscador-contenedor {
+        background-color: nth($colores, 12);
+        position: relative;
+        top: -6rem;
+        border-radius: 20px;
+        margin: auto;
+        @include tamaño(42rem, 10rem);
+        box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
+        @include display(flex, null, space-around, center);
+        margin-bottom: 9.25rem;
+        .definir-detalles {
+            @include display(flex, null, center, center);
+            .secciones-buscador {
+                @include display(inline-block, null, null, null);
+                padding: 0 1rem 0 1rem;
+                .button-search {
+                    @include botones(12px, null, null, null, nth($colores, 1));
+                    @include tamaño(3rem, 7rem);
+                    &:hover{
+                        box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
+                        transform: scale(1.2);
+                        transition: all 250ms ease-out;
+                    } 
+                }
+                
+                .formularios-buscador {
+                    margin-bottom: 2rem;
+                    @include display(flex, null, flex-start, center);
+                    .iconos-busqueda {
+                        margin-right: 4px;
+                        height: 16px;
+                    }
+                    label {
+                        @include textos(600, 14px, null, null);
+                        width: 138px;
+                    }
+                }
+                div {
+                    input {
+                        @include botones(12px, none, nth($colores, 7), null, nth($colores, 6));
+                        @include textos(400, 14px, null, null);
+                        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
+                        @include tamaño(100%, 2.5rem);
+                        padding-left: 16px;
+                    }
+                    
+                    }
+                .vertical-line {
+                    border-left: 1px solid  nth($colores, 2);
+                }
+            }
+            .button {
+                display: none;
+            }
+            
         }
     }
 }
@@ -118,6 +218,7 @@
         img {
             border-radius: 20px;
             margin-top: 5rem;
+            width: 292px;
         }
         h2 {
             @include textos(500, 42px, null, null);
@@ -138,13 +239,6 @@
         margin-bottom: 9.25rem;
         .definir-detalles {
             @include display(flex, null, center, center);
-            @media screen and (min-width: 969px) {
-                div {
-                    button {
-                        display: none;
-                    }
-                }
-            }
             .secciones-buscador {
                 @include display(inline-block, null, null, null);
                 padding: 0 1rem 0 1rem;
@@ -176,13 +270,16 @@
                         @include tamaño(100%, 2.5rem);
                         padding-left: 16px;
                     }
-                }
+                    
+                    }
                 .vertical-line {
                     border-left: 1px solid  nth($colores, 2);
                 }
             }
+            
         }
     }
 }
+
 
 /*Fin Home*/

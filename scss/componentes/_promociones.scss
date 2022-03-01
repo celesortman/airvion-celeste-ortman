@@ -5,43 +5,73 @@
     @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 9.25rem;
+    @media screen and (max-width: 576px) {
+        @include display(flex, column wrap, flex-start, null);
+        margin-bottom: 3.75rem;
+    }
     .contenedor-titulo {
         @include display(flex, column wrap, flex-start, flex-start);
         @include tamaño(50%, null);
+        @media screen and (max-width: 576px) {
+            @include tamaño(100%, null);
+        }
         h3 {
             @include textos(700, 32px, null, null);
             margin: 0;
             @include tamaño(80%, null);
+            @media screen and (max-width: 576px) {
+                @include textos(700, 28px, null, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include textos(700, 28px, null, null);
+                @include tamaño(100%, null);
+            }
         }
         h4 {
             @include textos(400, 20px, null, null);
             color: nth($colores, 2);
             @include tamaño(60%, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(90%, null);
+                @include textos(400, 16px, null, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(90%, null);
+                @include textos(400, 18px, null, null);
+            }
         }
     }
     .slider {
-        width: 60%;
+        @include tamaño(60%, null);
         margin: auto;
         overflow: hidden;
+        @media screen and (max-width: 576px) {
+            @include tamaño(100%, null);
+        }
         ul {
+            @include tamaño(300%, null);
+            @include display(flex, null, null, null);
             margin-top: 0;
             padding: 0;
-            display: flex;
-            width: 300%;
             animation: cambio 20s infinite;
             animation-direction: alternate;
             li {
-                width: 100%;
+                @include display(flex, row nowrap, null, null);
+                @include tamaño(100%, null);
                 list-style: none;
-                display: flex;
-                flex-flow: row nowrap;
-                
                 div {
-                    display: flex;
-                    flex-flow: row wrap;
+                    @include display(flex, row wrap, null, null);
                     img {
-                        width: 16.75rem;
+                        @include tamaño(16.75rem, null);
                         border-radius: 25px;
+                        @media screen and (max-width: 576px) {
+                            @include tamaño(12.5rem, null);
+                            border-radius: 20px;
+                        }
+                        @media screen and (min-width: 577px) and (max-width: 967px) {
+                            @include tamaño(9.5rem, null);
+                            border-radius: 20px;
+                        }
                     }
                     .precio {
                         @include botones(6px, null, nth($colores, 8), null, nth($colores, 1));
@@ -51,6 +81,16 @@
                         margin-top: -1.5rem;
                         margin-left: 5.75rem;
                         margin-bottom: 1.5rem;
+                        @media screen and (max-width: 576px) {
+                            margin-left: 3.75rem;
+                            @include textos(600, 20px, null, null);
+                            @include tamaño(8rem, 2.75rem);
+                        }
+                        @media screen and (min-width: 577px) and (max-width: 967px) {
+                            margin-left: 3.75rem;
+                            @include textos(600, 16px, null, null);
+                            @include tamaño(6rem, 2.5rem);
+                        }
                         &:hover {
                             transform: scale(1.2);
                             transition: all 300ms ease-out;
@@ -59,20 +99,23 @@
                     }
                     h4 {
                         @include textos(500, 16px, null, null);
+                        @include tamaño(100%, null);
                         margin: 0;
-                        width: 100%;
                     }
                     h5 {
                         @include textos(500, 16px, null, null);
+                        @include tamaño(100%, null);
                         margin-top: 4px;
                         margin-bottom: 0.75rem;
-                        width: 100%;
+                        @media screen and (max-width: 576px) {
+                            margin-bottom: 0.5rem;
+                        }
                     }
                     .cantidad-lugares {
                         @include textos(400, 14px, null, null);
+                        @include tamaño(100%, null);
                         color: nth($colores, 2);
                         margin-top: 0;
-                        width: 100%;
                     }
                 }
             }

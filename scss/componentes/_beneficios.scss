@@ -5,10 +5,22 @@
 .beneficios {
     margin: auto;
     margin-bottom: 9.25rem;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 3.75rem;
+        @include display(flex, column wrap, space-between, center);
+    }
     h3 {
         @include textos(700, 32px, null, center);
         margin: auto;
         margin-bottom: 1rem;
+        @media screen and (max-width: 576px) {
+            @include textos(700, 28px, null, center);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include textos(700, 28px, null, null);
+            @include tamaño(100%, null);
+            margin-bottom: 8px;
+        }
     }
     h4 {
         @include textos(400, 20px, null, center);
@@ -16,12 +28,31 @@
         @include tamaño(60%, null);
         margin: auto;
         margin-bottom: 4.5rem;
+        @media screen and (max-width: 576px) {
+            margin-bottom: 1.5rem;
+            @include textos(400, 16px, null, center);
+            width: 50%;
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include tamaño(90%, null);
+            @include textos(400, 18px, null, null);
+        }
     }
     .contenedor-beneficios {
         @include tamaño(100%, null);
         @include display(flex, row nowrap, center, null);
         margin: auto;
         margin-bottom: 4.5rem;
+        @media screen and (max-width: 576px) {
+            margin-bottom: 1rem;
+            @include display(flex, column wrap, space-between, center);
+            @include tamaño(80%, null);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            margin-bottom: 1rem;
+            @include display(flex, column wrap, space-between, center);
+            @include tamaño(80%, null);
+        }
         .beneficios-card {
             @include display(flex, row wrap, space-between, center);
             background-color: nth($colores, 4);
@@ -29,6 +60,14 @@
             border-radius: 15px;
             margin: auto;
             margin: 0 2.5rem 0 0;
+            @media screen and (max-width: 576px) {
+                margin: 0 2.5rem 1.5rem 0;
+                @include tamaño(100%, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(100%, null);
+                margin: 0 2.5rem 1.5rem 0;
+            }
             &:hover {
                 transform: scale(1.1);
                 transition: all 300ms ease-out;
@@ -37,6 +76,12 @@
                 @include display(flex, null, null, null);
                 margin: 1rem 2.5rem 1.25rem 1.25rem;
                 @include textos(600, 20px, null, null);
+                @media screen and (max-width: 576px) {
+                    @include textos(600, 16px, null, null);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include textos(600, 20px, null, null);
+                }
             }
             img {
                 @include tamaño(32px, null);
@@ -47,6 +92,12 @@
                 margin: 0 2.5rem 1.25rem 1.25rem;
                 @include textos(400, 20px, null, null);
                 @include display(flex, null, space-between, null);
+                @media screen and (max-width: 576px) {
+                    @include textos(400, 16px, null, null);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include textos(400, 16px, null, null);
+                }
             }
         }
     }
@@ -55,6 +106,14 @@
         @include tamaño(70%, null);
         margin: auto;
         color: nth($colores, 2);
+        @media screen and (max-width: 576px) {
+            @include textos(400, 16px, null, center);
+            @include tamaño(70%, null);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include textos(400, 18px, null, center);
+            @include tamaño(80%, null);
+        }
     }
 }
 

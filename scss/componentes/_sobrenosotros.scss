@@ -5,23 +5,55 @@
     @include tamaño(80%, null);
     margin: auto;
     margin-bottom: 9.25rem;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 3.75rem;
+        @include display(flex, column wrap, null, null);
+    }
     .titulo-nosotros {
         padding-right: 1.25rem;
     }
     div {
         @include tamaño(50%, null);
+        @media screen and (max-width: 576px) {
+            @include tamaño(100%, null);
+        }
         h3 {
             @include textos(700, 32px, null, null);
             margin-top: 0;
+            @media screen and (max-width: 576px) {
+                margin-bottom: 16px;
+                @include textos(700, 28px, null, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include textos(700, 28px, null, null);
+                @include tamaño(100%, null);
+                margin-bottom: 8px;
+            }
         }
         p {
             @include textos(400, 20px, 32px, null);
             color: nth($colores, 2);
             @include tamaño(90%, null);
+            @media screen and (max-width: 576px) {
+                margin: 0;
+                @include tamaño(100%, null);
+                @include textos(400, 16px, 28px, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(90%, null);
+                @include textos(400, 16px, 24px, null);
+                margin: 0;
+            }
         }
         .imagen-equipo {
             @include tamaño(100%, null);
             border-radius: 30px;
+            @media screen and (max-width: 576px) {
+                margin-top: 16px;
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                border-radius: 20px;
+            }
         }
     }
 }

@@ -33,6 +33,13 @@
                 .input-menu {
                 display: none;
                 }
+                a {
+                    .logo-mobile {
+                        @include tamaño(null, 2.25rem);
+                        display: flex;
+                        align-items: center;
+                    }
+                }
                 .menu-hamburguesa {
                 box-sizing: border-box;
                 display: inline-block;
@@ -43,24 +50,136 @@
                 font-weight: bold;
                 text-align: center;
                 user-select: none;
-                margin-right: 72px;
+                margin-right: 155px;
                 }
                 .items-menu {
                     display: none;
-                    margin-top: 384px;
-                    margin-left: -292px;
+                    margin-top: 410px;
+                    margin-left: -316px;
+                    padding-left: 40px;
                     width: 280px;
                     height: auto;
                     box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     -webkit-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     -moz-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     z-index: 0;
+                    background-color: nth($colores, 8);
                     .navegacion-menu {
                         display: block;
                         background-color: white;
                         margin: 0;
-                        padding: 20px 10px 10px 32px;
+                        padding: 20px 0px 10px 16px;
                         list-style: none;
+                        a {
+                            text-decoration: none;
+                            color: nth($colores, 3);
+                        }
+                    }
+                    .registro {
+                        display: block;
+                        background-color: nth($colores, 1);
+                        border-radius: 6px;
+                        margin-bottom: 20px;
+                        padding: 12px 0 12px 16px;
+                        list-style: none;
+                        text-align: center;
+                        width: 248px;
+                        a {
+                            text-decoration: none;
+                            color: nth($colores, 8);
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 967px) {
+        header {
+            background-color: nth($colores, 8);
+            @include tamaño(100%, null);
+            @include display(flex, row nowrap, null, null);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            .header-desktop {
+                display: none;
+            }
+            .menu-desplegable {
+                height: 52px;
+                background-color: white;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: fixed;
+                z-index: 1;
+                width: 100%;
+                input {
+                    &:checked  ~ ul{
+                        display:block;
+                    }
+                }
+                .input-menu {
+                display: none;
+                }
+                a {
+                    .logo-mobile {
+                        @include tamaño(null, 2.25rem);
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .menu-hamburguesa {
+                box-sizing: border-box;
+                display: inline-block;
+                border-radius: 5px;
+                width: 32px;
+                height: 32px;
+                line-height: 30px;
+                font-weight: bold;
+                text-align: center;
+                user-select: none;
+                margin-right: 288px;
+                }
+                .items-menu {
+                    display: none;
+                    margin-top: 411px;
+                    margin-left: -450px;
+                    padding-left: 40px;
+                    width: 280px;
+                    height: auto;
+                    box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
+                    -webkit-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
+                    -moz-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
+                    z-index: 0;
+                    background-color: nth($colores, 8);
+                    .navegacion-menu {
+                        display: block;
+                        background-color: white;
+                        margin: 0;
+                        padding: 20px 0px 10px 16px;
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            color: nth($colores, 3);
+                        }
+                    }
+                    .registro {
+                        display: block;
+                        background-color: nth($colores, 1);
+                        border-radius: 6px;
+                        margin-bottom: 20px;
+                        padding: 12px 0 12px 16px;
+                        list-style: none;
+                        text-align: center;
+                        width: 248px;
+                        a {
+                            text-decoration: none;
+                            color: nth($colores, 8);
+                            
+                        }
                     }
                 }
             }

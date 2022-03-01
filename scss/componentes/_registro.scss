@@ -32,7 +32,7 @@
         }
     }
     section {
-        @include tamaño(95%, 44.25rem);
+        @include tamaño(95%, 47.25rem);
         @include display(flex, row wrap, null, null);
         background-color: nth($colores, 8);
         margin: auto;
@@ -40,20 +40,50 @@
         margin-bottom: 4.25rem;
         border-radius: 30px;
         z-index: 0;
+        @media screen and (max-width: 576px) {
+            @include tamaño(23.25rem, 91.5rem);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include tamaño(44.25rem, 65.5rem);
+            @include display(flex, column wrap, null, null);
+        }
         .registro-contenedor-small {
             @include display(flex, column wrap, center, null);
-            @include tamaño(50%, 44.25rem);
+            @include tamaño(50%, 47.25rem);
             border-radius: 30px;
             box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
             -webkit-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
             -moz-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.25);
+            @media screen and (max-width: 576px) {
+                @include tamaño(23.25rem, 17.5rem);
+                box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+                -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+                -moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include tamaño(44.25rem, 17.5rem);
+            }
             h1 {
                 @include textos(500, 42px, null, center);
                 margin-top: 2.75rem;
+                @media screen and (max-width: 576px) {
+                    @include textos(500, 24px, null, center);
+                    margin-top: 1.5rem;
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include textos(500, 32px, null, center);
+                    margin-top: 1rem;
+                }
             }
             img {
                 margin: auto;
                 @include tamaño(33.25rem, null);
+                @media screen and (max-width: 576px) {
+                    @include tamaño(10.75rem, null);
+                }
+                @media screen and (min-width: 577px) and (max-width: 967px) {
+                    @include tamaño(10.75rem, null);
+                }
             }
         }
         .contenedor-de-formulario {
@@ -61,11 +91,19 @@
             @include display(flex, row wrap, space-between, null);
             margin: auto;
             margin-top: 1.5rem;
+            @media screen and (max-width: 576px) {
+                @include display(flex, column wrap, flex-start, null);
+                @include tamaño(21.25rem, 73rem);
+            }
             .formulario {
                 @include display(flex, column wrap, flex-start, null);
+                margin-bottom: 16px;
                 label {
                     @include textos(500, 16px, null, null);
                     margin-bottom: 0.75rem;
+                    @media screen and (max-width: 576px) {
+                        @include tamaño(20.5rem, null);
+                    }
                 }
                 input {
                     @include botones(12px, none, nth($colores, 2), null, nth($colores, 11));
@@ -75,12 +113,20 @@
                     &:focus {
                         border:1px solid nth($colores, 1);
                     }
+                    @media screen and (max-width: 576px) {
+                        @include tamaño(20.5rem, 3rem);
+                    }
                 }
                 p {
                     @include textos(400, 14px, null, null);
                     @include tamaño(15.25rem, null);
                     margin-top: 0.75rem;
+                    margin-bottom: 0;
                     color: nth($colores, 2);
+                    @media screen and (max-width: 576px) {
+                        @include tamaño(20.5rem, null);
+                        margin-bottom: 0;
+                    }
                 }
             }
             button {
@@ -88,9 +134,16 @@
                 @include botones(6px, none, nth($colores, 8), null, nth($colores, 1));
                 @include textos(600, 24px, null, null);
                 @include display(flex, row nowrap, center, center);
+                margin-bottom: 12px;
                 &:hover{
                     box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                     transition: all 250ms ease-out;
+                }
+                @media screen and (max-width: 576px) {
+                    @include tamaño(20rem, 3.25rem);
+                    @include textos(600, 20px, null, null);
+                    margin-left: 10px;
+                    margin-bottom: 8px;
                 }
             }
             a {
@@ -100,12 +153,19 @@
                     @include textos(500, 20px, null, null);
                     @include tamaño(32.25rem, 3rem);
                     @include display(flex, null, center, center);
+                    margin-bottom: 12px;
                     &:hover{
                         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                         transition: all 250ms ease-out;
                     }
                     span {
                         margin-left: 0.75rem;
+                    }
+                    @media screen and (max-width: 576px) {
+                        @include tamaño(20rem, 3.25rem);
+                        @include textos(500, 16px, null, null);
+                        margin-left: 10px;
+                        margin-bottom: 8px;
                     }
                 }
                 .contenedor-google {
@@ -113,6 +173,7 @@
                     @include textos(500, 20px, null, null);
                     @include tamaño(32.25rem, 3rem);
                     @include display(flex, null, center, center);
+                    margin-bottom: 12px;
                     &:hover{
                         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                         transition: all 250ms ease-out;
@@ -120,14 +181,26 @@
                     span {
                         margin-left: 0.75rem;
                     }
+                    @media screen and (max-width: 576px) {
+                        @include tamaño(20rem, 3.25rem);
+                        @include textos(500, 16px, null, null);
+                        margin-left: 10px;
+                        margin-bottom: 16px;
+                    }
                 }
 
             }
             .parrafos-inferiores-formulario {
                 text-align: center;
                 color: nth($colores, 2);
+                @media screen and (max-width: 576px) {
+                    @include textos(400, 14px, null, null); 
+                }
                 p {
                     margin: 0;
+                    @media screen and (max-width: 576px) {
+                        margin-bottom: 8px;
+                    }
                     a {
                         margin-left: 0.5rem;
                         &:hover {
@@ -148,6 +221,10 @@
         p {
             color: nth($colores, 2);
             @include display(flex, row nowrap, center, null);
+            @media screen and (max-width: 576px) {
+                @include textos(400, 14px, null, null);
+                @include tamaño(19rem, null);
+            }
             b {
                 @include display(flex, row nowrap, center, null);
             }

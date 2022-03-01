@@ -3,11 +3,22 @@
 .medios-de-pago {
     @include display(flex, row wrap, center, null);
     margin-bottom: 9.25rem;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 3.75rem;
+    }
     h3 {
         @include textos(700, 32px, null, center);
         margin: auto;
         margin-bottom: 1rem;
         @include tamaño(100%, null);
+        @media screen and (max-width: 576px) {
+            @include textos(700, 28px, null, center);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include textos(700, 28px, null, null);
+            @include tamaño(100%, null);
+            margin-bottom: 8px;
+        }
     }
     h4 {
         @include textos(400, 20px, null, center);
@@ -15,6 +26,16 @@
         @include tamaño(100%, null);
         margin: auto;
         margin-bottom: 4.5rem;
+        @media screen and (max-width: 576px) {
+            @include tamaño(64%, null);
+            margin-bottom: 2.5rem;
+            @include textos(400, 16px, null, center);
+        }
+        @media screen and (min-width: 577px) and (max-width: 967px) {
+            @include tamaño(90%, null);
+            @include textos(400, 18px, null, null);
+            margin-bottom: 2.5rem;
+        }
     }
     div {
         background-color: nth($colores, 8);
@@ -24,6 +45,10 @@
         @include tamaño(32%, 12rem);
         margin-right: 1.25rem;
         margin-bottom: 1.25rem;
+        @media screen and (max-width: 576px) {
+            @include tamaño(11rem, 8rem);
+            border: 3px solid nth($colores, 4);
+        }
         &:hover {
             transform: scale(1.1);
             transition: all 300ms ease-out;
@@ -33,32 +58,67 @@
         h5 {
             @include textos(600, 20px, null, center);
             margin-bottom: 1rem;
-            @include tamaño(21.75rem, null);
+            @include tamaño(100%, null);
             margin-top: 0;
+            @media screen and (max-width: 576px) {
+                @include textos(600, 16px, null, center);
+                margin-bottom: 0;
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include textos(600, 18px, null, center);
+                margin-bottom: 0;
+            }
         }
         .logo-transferencia {
             @include tamaño(5.25rem, null);
             @include display(flex, row nowrap, null, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(4rem, null);
+            }
         }
         .logo-mercadopago {
             @include tamaño(13.5rem, null);
             @include display(flex, row nowrap, null, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(7.75rem, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(12.75rem, null);
+            }
         }
         .logo-mastercard {
             @include tamaño(5.25rem, null);
             @include display(flex, row nowrap, null, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(3.5rem, null);
+            }
         }
         .logo-visa {
             @include tamaño(7.75rem, null);
             @include display(flex, row nowrap, null, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(4.5rem, null);
+            }
         }
         .logo-pago-facil {
             @include tamaño(5rem, null);
             @include display(flex, row nowrap, null, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(3rem, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(4rem, null);
+            }
         }
         .logo-rapipago {
             @include tamaño(10.75rem, null);
             @include display(flex, row nowrap, null, null);
+            @media screen and (max-width: 576px) {
+                @include tamaño(6rem, null);
+            }
+            @media screen and (min-width: 577px) and (max-width: 967px) {
+                @include tamaño(9rem, null);
+            }
         }
     }
 }
