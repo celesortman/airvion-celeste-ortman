@@ -38,7 +38,7 @@
                 }
                 h5 {
                     @include textos(500, 16px, null, null);
-                    margin: 8px 0 8px 0;
+                    margin: 0.5rem 0 0.5rem 0;
                 }
                 button {
                     @include botones(5px, none, nth($colores, 8), null, nth($colores, 1));

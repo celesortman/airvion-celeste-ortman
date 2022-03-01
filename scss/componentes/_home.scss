@@ -2,93 +2,69 @@
 
 @media screen and (max-width: 576px) {
     .home-contenedor {
-        background-color: #CEECF2;
-        border-radius: 40px;
-        width: 372px;
-        height: 680px;
+        @include tamaño(23.25rem, 42.5rem);
+        @include display(flex, row wrap, flex-start, flex-start);
+        @include botones(40px, none, null, null, nth($colores, 4));
         margin: auto;
-        margin-top: 68px;
+        margin-top: 4.25rem;
         z-index: -1;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
         h1 {
-            margin-top: 22px;
-            margin-left: 16px;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
             @include textos(700, 36px, 48px, null);
-            width: 342px;
+            @include tamaño(21.5rem, 42.5rem);
         }
         h2 {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 32px;
-            width: 244px;
-            margin-top: -252px;
-            margin-left: 16px;
+            @include textos(500, 24px, 32px, null);
+            @include tamaño(15.25rem, null);
+            margin-top: -15.75rem;
+            margin-left: 1rem;
         }
         img {
             display: none;
         }
     }
     .buscador-contenedor {
+        @include display(flex, null, space-around, center);
+        @include tamaño(21.25rem, 25.25rem);
         position: relative;
-        top: -420px;
-        background-color: #f9f9f9be;
-        border-radius: 20px;
+        top: -26.25rem;
+        background-color: nth($colores, 5);
+        border-radius: 1.25rem;
         margin: auto;
         box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
         -webkit-box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
         -moz-box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
         z-index: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 340px;
-        height: 404px;
-        margin-bottom: -352px;
+        margin-bottom: -22rem;
         .definir-detalles {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-content: center;
+            @include display(flex, column wrap, center, center);
             margin-top: -10px;
             .secciones-buscador {
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: flex-start;
+                @include display(flex, column wrap, flex-start, null);
                 margin: 10px;
                 .formularios-buscador {
-                    margin-bottom: 8px;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
+                    @include display(flex, null, flex-start, center);
+                    margin-bottom: 0.5rem;
                     .iconos-busqueda {
-                        height: 16px;
-                        margin-right: 8px;
+                        @include tamaño(null, 1rem);
+                        margin-right: 0.5rem;
                     }
                     label {
-                        font-weight: 600;
-                        font-size: 20px;
+                        @include textos(600, 20px, null, null);
                     }
                 }
                 div {
                     input {
-                        background-color: #EEEBEB;
-                        color: #494747;
-                        border: none;
-                        width: 308px;
-                        height: 48px;
-                        border-radius: 12px;
-                        font-weight: 400;
-                        font-size: 14px;
+                        @include botones(12px, none, nth($colores, 7), null, nth($colores, 6));
+                        @include tamaño(19.25rem, 3rem);
+                        @include textos(400, 14px, null, null);
                         box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
-                        padding-left: 16px;
+                        padding-left: 1rem;
                     }
                     
                     .button {
-                        display: flex;
-                        justify-content: center;
+                        @include display(flex, null, center, null);
                         button {
                             @media screen and (min-width: 968px) {
                                 display: none;
@@ -115,24 +91,23 @@
 
 @media screen and (min-width: 577px) and (max-width: 967px) {
     .home-contenedor {
-        background-color: nth($colores, 4);
+        @include botones(24px, none, null, null, nth($colores, 4));
         @include tamaño(96%, 29rem);
-        border-radius: 24px;
+        @include display(flex, row wrap, center, flex-start);
         margin: auto;
         margin-top: 4.25rem;
-        @include display(flex, row wrap, center, flex-start);
         h1 {
-            width: 56%;
+            @include tamaño(56%, null);
             @include textos(700, 56px, 80px, null);
-            margin-bottom: 0.5rem;
-            margin-right: 45px;
             @include display(flex, row wrap, flex-start, flex-start);
+            margin-bottom: 0.5rem;
+            margin-right: 2.75rem;
             margin-top: 3rem;
         }
         img {
-            border-radius: 20px;
+            border-radius: 1.25rem;
             margin-top: 3rem;
-            width: 200px;
+            @include tamaño(12.5rem, null);
         }
         h2 {
             @include textos(500, 28px, null, null);
@@ -142,14 +117,14 @@
         }
     }
     .buscador-contenedor {
+        @include tamaño(42rem, 10rem);
+        @include display(flex, null, space-around, center);
         background-color: nth($colores, 12);
         position: relative;
         top: -6rem;
-        border-radius: 20px;
+        border-radius: 1.25rem;
         margin: auto;
-        @include tamaño(42rem, 10rem);
         box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
-        @include display(flex, null, space-around, center);
         margin-bottom: 9.25rem;
         .definir-detalles {
             @include display(flex, null, center, center);
@@ -170,21 +145,21 @@
                     margin-bottom: 2rem;
                     @include display(flex, null, flex-start, center);
                     .iconos-busqueda {
-                        margin-right: 4px;
-                        height: 16px;
+                        margin-right: 0.25rem;
+                        height: 1rem;
                     }
                     label {
                         @include textos(600, 14px, null, null);
-                        width: 138px;
+                        @include tamaño(8.5rem, null);
                     }
                 }
                 div {
                     input {
                         @include botones(12px, none, nth($colores, 7), null, nth($colores, 6));
                         @include textos(400, 14px, null, null);
-                        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
                         @include tamaño(100%, 2.5rem);
-                        padding-left: 16px;
+                        box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
+                        padding-left: 1rem;
                     }
                     
                     }
@@ -201,24 +176,23 @@
 }
 @media screen and (min-width: 969px) {
     .home-contenedor {
-        background-color: nth($colores, 4);
+        @include botones(40px, none, null, null, nth($colores, 4));
         @include tamaño(96%, 40rem);
-        border-radius: 40px;
+        @include display(flex, row wrap, center, flex-start);
         margin: auto;
         margin-top: 4.25rem;
-        @include display(flex, row wrap, center, flex-start);
         h1 {
-            width: 56%;
+            @include tamaño(56%, null);
+            @include display(flex, row wrap, flex-start, flex-start);
             @include textos(700, 96px, 120px, null);
             margin-bottom: 0.5rem;
             margin-right: 10px;
-            @include display(flex, row wrap, flex-start, flex-start);
             margin-top: 3.75rem;
         }
         img {
-            border-radius: 20px;
+            @include tamaño(18.25rem, null);
+            border-radius: 1.25rem;
             margin-top: 5rem;
-            width: 292px;
         }
         h2 {
             @include textos(500, 42px, null, null);
@@ -228,14 +202,14 @@
         }
     }
     .buscador-contenedor {
+        @include tamaño(78%, 12rem);
+        @include display(flex, null, space-around, center);
         background-color: nth($colores, 12);
         position: relative;
         top: -6rem;
-        border-radius: 20px;
+        border-radius: 1.25rem;
         margin: auto;
-        @include tamaño(78%, 12rem);
         box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.25);
-        @include display(flex, null, space-around, center);
         margin-bottom: 9.25rem;
         .definir-detalles {
             @include display(flex, null, center, center);
@@ -255,8 +229,8 @@
                     margin-bottom: 2rem;
                     @include display(flex, null, flex-start, center);
                     .iconos-busqueda {
-                        margin-right: 8px;
-                        height: 20px;
+                        @include tamaño(null, 1.25rem);
+                        margin-right: 0.5rem;
                     }
                     label {
                         @include textos(700, 24px, null, null);
@@ -268,7 +242,7 @@
                         @include textos(400, 14px, null, null);
                         box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.13);
                         @include tamaño(100%, 2.5rem);
-                        padding-left: 16px;
+                        padding-left: 1rem;
                     }
                     
                     }

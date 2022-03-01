@@ -14,10 +14,10 @@ footer {
         .section-email {
             @include display(flex, row wrap, flex-start, null);
             @media screen and (max-width: 576px) {
-                margin-top: 20px;
+                margin-top: 1.25rem;
             }
             @media screen and (min-width: 577px) and (max-width: 967px) {
-                margin-top: 32px;
+                margin-top: 2rem;
             }
             h3 {
                 @media screen and (max-width: 576px) {
@@ -30,11 +30,10 @@ footer {
             img {
                 @include display(flex, row wrap, null, null);
                 margin-right: 0.5rem;
-                @include tamaño(48px, 48px);
+                @include tamaño(3rem, 3rem);
             }
             label {
-                @include textos(600, 20px, null, null);
-                line-height: 1.5rem;
+                @include textos(600, 20px, 1.5rem, null);
                 @include tamaño(56%, null);
                 @include display(flex, row wrap, null, null);
                 @media screen and (max-width: 576px) {
@@ -51,7 +50,7 @@ footer {
                 @include textos(400, 16px, null, null);
                 @include tamaño(100%, 2.5rem);
                 margin: 1.25rem 0 0.75rem 0;
-                padding-left: 16px;
+                padding-left: 1rem;
                 @media screen and (max-width: 576px) {
                     @include tamaño(20.5rem, 2.5rem);
                 }
@@ -84,7 +83,7 @@ footer {
                 margin: auto;
             }
             .contacto {
-                margin-top: 20px;
+                margin-top: 1.25rem;
                 @media screen and (min-width: 577px) and (max-width: 967px) {
                     margin-top: 0;
                 }
@@ -168,7 +167,7 @@ footer {
             width: 18rem;
             margin: auto;
             @include textos(400, 14px, null, center);
-            margin-top: 24px;
+            margin-top: 1.5rem;
         }
     }
 }

@@ -63,14 +63,14 @@
                     @include display(flex, row wrap, null, null);
                     img {
                         @include tamaño(16.75rem, null);
-                        border-radius: 25px;
+                        border-radius: 1.5rem;
                         @media screen and (max-width: 576px) {
                             @include tamaño(12.5rem, null);
-                            border-radius: 20px;
+                            border-radius: 1.25rem;
                         }
                         @media screen and (min-width: 577px) and (max-width: 967px) {
                             @include tamaño(9.5rem, null);
-                            border-radius: 20px;
+                            border-radius: 1.25rem;
                         }
                     }
                     .precio {
@@ -105,7 +105,7 @@
                     h5 {
                         @include textos(500, 16px, null, null);
                         @include tamaño(100%, null);
-                        margin-top: 4px;
+                        margin-top: 0.25rem;
                         margin-bottom: 0.75rem;
                         @media screen and (max-width: 576px) {
                             margin-bottom: 0.5rem;

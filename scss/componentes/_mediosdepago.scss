@@ -38,9 +38,7 @@
         }
     }
     div {
-        background-color: nth($colores, 8);
-        border: 4px solid nth($colores, 4);
-        border-radius: 15px;
+        @include botones(15px, 4px solid nth($colores, 4), null, null, nth($colores, 8));
         @include display(flex, row wrap, center, center);
         @include tamaño(32%, 12rem);
         margin-right: 1.25rem;
@@ -52,7 +50,7 @@
         &:hover {
             transform: scale(1.1);
             transition: all 300ms ease-out;
-            border: 4px solid nth($colores, 1);
+            border: 0.25rem solid nth($colores, 1);
             background-color: nth($colores, 16);
         }
         h5 {

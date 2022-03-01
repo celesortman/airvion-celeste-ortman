@@ -17,14 +17,11 @@
                 display: none;
             }
             .menu-desplegable {
-                height: 52px;
+                @include tamaño(100%, 3.25rem);
+                @include display(flex, null, flex-start, center);
                 background-color: white;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
                 position: fixed;
                 z-index: 1;
-                width: 100%;
                 input {
                     &:checked  ~ ul{
                         display:block;
@@ -36,39 +33,34 @@
                 a {
                     .logo-mobile {
                         @include tamaño(null, 2.25rem);
-                        display: flex;
-                        align-items: center;
+                        @include display(flex, null, null, center);
                     }
                 }
                 .menu-hamburguesa {
+                @include display(inline-block, null, null, null);
+                @include tamaño(2rem, 2rem);
+                @include textos(700, null, 30px, center);
                 box-sizing: border-box;
-                display: inline-block;
                 border-radius: 5px;
-                width: 32px;
-                height: 32px;
-                line-height: 30px;
-                font-weight: bold;
-                text-align: center;
                 user-select: none;
-                margin-right: 155px;
+                margin-right: 9.75rem;
                 }
                 .items-menu {
-                    display: none;
-                    margin-top: 410px;
-                    margin-left: -316px;
-                    padding-left: 40px;
-                    width: 280px;
-                    height: auto;
+                    @include tamaño(17.5rem, auto);
+                    @include display(none, null, null, null);
+                    margin-top: 25.625rem;
+                    margin-left: -19.75rem;
+                    padding-left: 2.5rem;
                     box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     -webkit-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     -moz-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     z-index: 0;
                     background-color: nth($colores, 8);
                     .navegacion-menu {
-                        display: block;
+                        @include display(block, null, null, null);
                         background-color: white;
                         margin: 0;
-                        padding: 20px 0px 10px 16px;
+                        padding: 1.25rem 0px 0.625rem 1rem;
                         list-style: none;
                         a {
                             text-decoration: none;
@@ -76,14 +68,13 @@
                         }
                     }
                     .registro {
-                        display: block;
-                        background-color: nth($colores, 1);
-                        border-radius: 6px;
-                        margin-bottom: 20px;
-                        padding: 12px 0 12px 16px;
+                        @include display(block, null, null, null);
+                        @include tamaño(15.5rem, null);
+                        @include botones(6px, none, null, null, nth($colores, 1));
+                        margin-bottom: 1.25rem;
+                        padding: 0.75rem 0 0.75rem 1rem;
                         list-style: none;
                         text-align: center;
-                        width: 248px;
                         a {
                             text-decoration: none;
                             color: nth($colores, 8);
@@ -108,14 +99,11 @@
                 display: none;
             }
             .menu-desplegable {
-                height: 52px;
+                @include tamaño(100%, 3.25rem);
+                @include display(flex, null, flex-start, center);
                 background-color: white;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
                 position: fixed;
                 z-index: 1;
-                width: 100%;
                 input {
                     &:checked  ~ ul{
                         display:block;
@@ -127,39 +115,34 @@
                 a {
                     .logo-mobile {
                         @include tamaño(null, 2.25rem);
-                        display: flex;
-                        align-items: center;
+                        @include display(flex, null, null, center);
                     }
                 }
                 .menu-hamburguesa {
+                @include display(inline-block, null, null, null);
+                @include tamaño(2rem, 2rem);
+                @include textos(700, null, 30px, center);
                 box-sizing: border-box;
-                display: inline-block;
                 border-radius: 5px;
-                width: 32px;
-                height: 32px;
-                line-height: 30px;
-                font-weight: bold;
-                text-align: center;
                 user-select: none;
-                margin-right: 288px;
+                margin-right: 18rem;
                 }
                 .items-menu {
-                    display: none;
-                    margin-top: 411px;
-                    margin-left: -450px;
-                    padding-left: 40px;
-                    width: 280px;
-                    height: auto;
+                    @include tamaño(17.5rem, auto);
+                    @include display(none, null, null, null);
+                    margin-top: 25.75rem;
+                    margin-left: -28.125rem;
+                    padding-left: 2.5rem;
                     box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     -webkit-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     -moz-box-shadow: 4px 2px 8px 0px rgba(0,0,0,0.25);
                     z-index: 0;
                     background-color: nth($colores, 8);
                     .navegacion-menu {
-                        display: block;
-                        background-color: white;
+                        @include display(block, null, null, null);
+                        background-color: nth($colores, 8);
                         margin: 0;
-                        padding: 20px 0px 10px 16px;
+                        padding: 0.75rem 0px 0.625rem 1rem;
                         list-style: none;
                         a {
                             text-decoration: none;
@@ -167,14 +150,13 @@
                         }
                     }
                     .registro {
-                        display: block;
-                        background-color: nth($colores, 1);
-                        border-radius: 6px;
-                        margin-bottom: 20px;
-                        padding: 12px 0 12px 16px;
+                        @include display(block, null, null, null);
+                        @include tamaño(15.5rem, null);
+                        @include botones(6px, none, null, null, nth($colores, 1));
+                        margin-bottom: 1.25rem;
+                        padding: 0.75rem 0 0.75rem 1rem;
                         list-style: none;
                         text-align: center;
-                        width: 248px;
                         a {
                             text-decoration: none;
                             color: nth($colores, 8);
@@ -216,7 +198,7 @@
                                 @include textos(600, null, null, null);
                                 transition: all 300ms linear;
                                 background-color: nth($colores, 16);
-                                padding: 8px 16px;
+                                padding: 0.5rem 1rem;
                                 border-radius: 6px;
                             }
                         }

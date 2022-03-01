@@ -12,9 +12,6 @@
         @include tamaño(100%, 4rem);
         @include display(flex, row nowrap, space-between, center);
         padding: 0 3% 0 3%;
-        @media screen and (max-width: 576px) {
-            
-        }
         .nav-ayuda {
             @include tamaño(50%, null);
             margin-left: 61.25rem;
@@ -37,7 +34,7 @@
     img {
         @include tamaño(38%, null);
         margin: auto;
-        margin-top: 68px;
+        margin-top: 4.25rem;
         @media screen and (max-width: 576px) {
             @include tamaño(70%, null);
         }

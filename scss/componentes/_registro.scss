@@ -11,16 +11,12 @@
         left: 0;
         z-index: 1;
         .header-contenedor {
-            width: 100%;
-            height: 64px;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: center;
+            @include tamaño(100%, 4rem);
+            @include display(flex, row nowrap, space-between, center);
             padding: 0 3% 0 3%;
             .nav-ayuda {
+                @include tamaño(50%,null);
                 margin-left: 61.25rem;
-                width: 50%;
                 li {
                     list-style-type: none;
                     a {
@@ -97,7 +93,7 @@
             }
             .formulario {
                 @include display(flex, column wrap, flex-start, null);
-                margin-bottom: 16px;
+                margin-bottom: 1rem;
                 label {
                     @include textos(500, 16px, null, null);
                     margin-bottom: 0.75rem;
@@ -109,7 +105,7 @@
                     @include botones(12px, none, nth($colores, 2), null, nth($colores, 11));
                     @include tamaño(15.25rem, 3rem);
                     @include textos(400, 14px, null, null);
-                    padding-left: 8px;
+                    padding-left: 0.5rem;
                     &:focus {
                         border:1px solid nth($colores, 1);
                     }
@@ -134,7 +130,7 @@
                 @include botones(6px, none, nth($colores, 8), null, nth($colores, 1));
                 @include textos(600, 24px, null, null);
                 @include display(flex, row nowrap, center, center);
-                margin-bottom: 12px;
+                margin-bottom: 0.75rem;
                 &:hover{
                     box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                     transition: all 250ms ease-out;
@@ -143,7 +139,7 @@
                     @include tamaño(20rem, 3.25rem);
                     @include textos(600, 20px, null, null);
                     margin-left: 10px;
-                    margin-bottom: 8px;
+                    margin-bottom: 0.5rem;
                 }
             }
             a {
@@ -153,7 +149,7 @@
                     @include textos(500, 20px, null, null);
                     @include tamaño(32.25rem, 3rem);
                     @include display(flex, null, center, center);
-                    margin-bottom: 12px;
+                    margin-bottom: 0.75rem;
                     &:hover{
                         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                         transition: all 250ms ease-out;
@@ -165,7 +161,7 @@
                         @include tamaño(20rem, 3.25rem);
                         @include textos(500, 16px, null, null);
                         margin-left: 10px;
-                        margin-bottom: 8px;
+                        margin-bottom: 0.5rem;
                     }
                 }
                 .contenedor-google {
@@ -173,7 +169,7 @@
                     @include textos(500, 20px, null, null);
                     @include tamaño(32.25rem, 3rem);
                     @include display(flex, null, center, center);
-                    margin-bottom: 12px;
+                    margin-bottom: 0.75rem;
                     &:hover{
                         box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
                         transition: all 250ms ease-out;
@@ -185,7 +181,7 @@
                         @include tamaño(20rem, 3.25rem);
                         @include textos(500, 16px, null, null);
                         margin-left: 10px;
-                        margin-bottom: 16px;
+                        margin-bottom: 1rem;
                     }
                 }
 
@@ -199,7 +195,7 @@
                 p {
                     margin: 0;
                     @media screen and (max-width: 576px) {
-                        margin-bottom: 8px;
+                        margin-bottom:0.5rem;
                     }
                     a {
                         margin-left: 0.5rem;
@@ -214,7 +210,7 @@
         }
     }
     footer {
-        @include tamaño(100%, 52px);
+        @include tamaño(100%, 3.25rem);
         @include display(flex, row nowrap, center, center);
         background-color: nth($colores, 8);
         margin: 0;

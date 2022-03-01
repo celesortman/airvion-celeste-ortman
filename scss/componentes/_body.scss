@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #292929;
-    background-color: #FDFDFD;
+    color: nth($colores, 3);
+    background-color: nth($colores, 17);
 }
 
 /*Fin Body*/

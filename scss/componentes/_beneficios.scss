@@ -19,7 +19,7 @@
         @media screen and (min-width: 577px) and (max-width: 967px) {
             @include textos(700, 28px, null, null);
             @include tamaño(100%, null);
-            margin-bottom: 8px;
+            margin-bottom: 0.5rem;
         }
     }
     h4 {
@@ -31,7 +31,7 @@
         @media screen and (max-width: 576px) {
             margin-bottom: 1.5rem;
             @include textos(400, 16px, null, center);
-            width: 50%;
+            @include tamaño(50%, null);
         }
         @media screen and (min-width: 577px) and (max-width: 967px) {
             @include tamaño(90%, null);
@@ -57,7 +57,7 @@
             @include display(flex, row wrap, space-between, center);
             background-color: nth($colores, 4);
             @include tamaño(30%, null);
-            border-radius: 15px;
+            border-radius: 1rem;
             margin: auto;
             margin: 0 2.5rem 0 0;
             @media screen and (max-width: 576px) {

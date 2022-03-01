@@ -21,13 +21,13 @@
             @include textos(700, 32px, null, null);
             margin-top: 0;
             @media screen and (max-width: 576px) {
-                margin-bottom: 16px;
+                margin-bottom: 1rem;
                 @include textos(700, 28px, null, null);
             }
             @media screen and (min-width: 577px) and (max-width: 967px) {
                 @include textos(700, 28px, null, null);
                 @include tamaño(100%, null);
-                margin-bottom: 8px;
+                margin-bottom: 0.5rem;
             }
         }
         p {
@@ -49,10 +49,10 @@
             @include tamaño(100%, null);
             border-radius: 30px;
             @media screen and (max-width: 576px) {
-                margin-top: 16px;
+                margin-top: 1rem;
             }
             @media screen and (min-width: 577px) and (max-width: 967px) {
-                border-radius: 20px;
+                border-radius: 1.25rem;
             }
         }
     }

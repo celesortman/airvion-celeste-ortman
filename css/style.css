@@ -16,14 +16,14 @@
     display: none;
   }
   header .menu-desplegable {
-    height: 52px;
-    background-color: white;
+    width: 100%;
+    height: 3.25rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: white;
     position: fixed;
     z-index: 1;
-    width: 100%;
   }
   header .menu-desplegable input:checked ~ ul {
     display: block;
@@ -37,24 +37,24 @@
     align-items: center;
   }
   header .menu-desplegable .menu-hamburguesa {
-    box-sizing: border-box;
     display: inline-block;
-    border-radius: 5px;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
+    font-weight: 700;
     line-height: 30px;
-    font-weight: bold;
     text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
     user-select: none;
-    margin-right: 155px;
+    margin-right: 9.75rem;
   }
   header .menu-desplegable .items-menu {
-    display: none;
-    margin-top: 410px;
-    margin-left: -316px;
-    padding-left: 40px;
-    width: 280px;
+    width: 17.5rem;
     height: auto;
+    display: none;
+    margin-top: 25.625rem;
+    margin-left: -19.75rem;
+    padding-left: 2.5rem;
     box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.25);
@@ -65,7 +65,7 @@
     display: block;
     background-color: white;
     margin: 0;
-    padding: 20px 0px 10px 16px;
+    padding: 1.25rem 0px 0.625rem 1rem;
     list-style: none;
   }
   header .menu-desplegable .items-menu .navegacion-menu a {
@@ -74,13 +74,14 @@
   }
   header .menu-desplegable .items-menu .registro {
     display: block;
-    background-color: #4E63D4;
+    width: 15.5rem;
     border-radius: 6px;
-    margin-bottom: 20px;
-    padding: 12px 0 12px 16px;
+    border: none;
+    background-color: #4E63D4;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0 0.75rem 1rem;
     list-style: none;
     text-align: center;
-    width: 248px;
   }
   header .menu-desplegable .items-menu .registro a {
     text-decoration: none;
@@ -102,14 +103,14 @@
     display: none;
   }
   header .menu-desplegable {
-    height: 52px;
-    background-color: white;
+    width: 100%;
+    height: 3.25rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: white;
     position: fixed;
     z-index: 1;
-    width: 100%;
   }
   header .menu-desplegable input:checked ~ ul {
     display: block;
@@ -123,24 +124,24 @@
     align-items: center;
   }
   header .menu-desplegable .menu-hamburguesa {
-    box-sizing: border-box;
     display: inline-block;
-    border-radius: 5px;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
+    font-weight: 700;
     line-height: 30px;
-    font-weight: bold;
     text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
     user-select: none;
-    margin-right: 288px;
+    margin-right: 18rem;
   }
   header .menu-desplegable .items-menu {
-    display: none;
-    margin-top: 411px;
-    margin-left: -450px;
-    padding-left: 40px;
-    width: 280px;
+    width: 17.5rem;
     height: auto;
+    display: none;
+    margin-top: 25.75rem;
+    margin-left: -28.125rem;
+    padding-left: 2.5rem;
     box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.25);
@@ -151,7 +152,7 @@
     display: block;
     background-color: white;
     margin: 0;
-    padding: 20px 0px 10px 16px;
+    padding: 0.75rem 0px 0.625rem 1rem;
     list-style: none;
   }
   header .menu-desplegable .items-menu .navegacion-menu a {
@@ -160,13 +161,14 @@
   }
   header .menu-desplegable .items-menu .registro {
     display: block;
-    background-color: #4E63D4;
+    width: 15.5rem;
     border-radius: 6px;
-    margin-bottom: 20px;
-    padding: 12px 0 12px 16px;
+    border: none;
+    background-color: #4E63D4;
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0 0.75rem 1rem;
     list-style: none;
     text-align: center;
-    width: 248px;
   }
   header .menu-desplegable .items-menu .registro a {
     text-decoration: none;
@@ -215,7 +217,7 @@
     font-weight: 600;
     transition: all 300ms linear;
     background-color: #ceebf198;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
   }
   header .header-desktop ul li .registro {
@@ -236,60 +238,62 @@
 /*Inicio Home*/
 @media screen and (max-width: 576px) {
   .home-contenedor {
-    background-color: #CEECF2;
-    border-radius: 40px;
-    width: 372px;
-    height: 680px;
-    margin: auto;
-    margin-top: 68px;
-    z-index: -1;
+    width: 23.25rem;
+    height: 42.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    border-radius: 40px;
+    border: none;
+    background-color: #CEEBF1;
+    margin: auto;
+    margin-top: 4.25rem;
+    z-index: -1;
   }
   .home-contenedor h1 {
-    margin-top: 22px;
-    margin-left: 16px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;
-    width: 342px;
+    width: 21.5rem;
+    height: 42.5rem;
   }
   .home-contenedor h2 {
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    width: 244px;
-    margin-top: -252px;
-    margin-left: 16px;
+    width: 15.25rem;
+    margin-top: -15.75rem;
+    margin-left: 1rem;
   }
   .home-contenedor img {
     display: none;
   }
 
   .buscador-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 21.25rem;
+    height: 25.25rem;
     position: relative;
-    top: -420px;
-    background-color: #f9f9f9be;
-    border-radius: 20px;
+    top: -26.25rem;
+    background-color: #f9f9f9c7;
+    border-radius: 1.25rem;
     margin: auto;
     box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     z-index: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 340px;
-    height: 404px;
-    margin-bottom: -352px;
+    margin-bottom: -22rem;
   }
   .buscador-contenedor .definir-detalles {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     margin-top: -10px;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador {
@@ -299,30 +303,30 @@
     margin: 10px;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador {
-    margin-bottom: 8px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 0.5rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador .iconos-busqueda {
-    height: 16px;
-    margin-right: 8px;
+    height: 1rem;
+    margin-right: 0.5rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador label {
     font-weight: 600;
     font-size: 20px;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador div input {
-    background-color: #EEEBEB;
-    color: #494747;
-    border: none;
-    width: 308px;
-    height: 48px;
     border-radius: 12px;
+    border: none;
+    color: #494747;
+    background-color: #EEEBEB;
+    width: 19.25rem;
+    height: 3rem;
     font-weight: 400;
     font-size: 14px;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.13);
-    padding-left: 16px;
+    padding-left: 1rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador div .button {
     display: flex;
@@ -358,34 +362,35 @@
 }
 @media screen and (min-width: 577px) and (max-width: 967px) {
   .home-contenedor {
+    border-radius: 24px;
+    border: none;
     background-color: #CEEBF1;
     width: 96%;
     height: 29rem;
-    border-radius: 24px;
-    margin: auto;
-    margin-top: 4.25rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    margin: auto;
+    margin-top: 4.25rem;
   }
   .home-contenedor h1 {
     width: 56%;
     font-weight: 700;
     font-size: 56px;
     line-height: 80px;
-    margin-bottom: 0.5rem;
-    margin-right: 45px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 0.5rem;
+    margin-right: 2.75rem;
     margin-top: 3rem;
   }
   .home-contenedor img {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     margin-top: 3rem;
-    width: 200px;
+    width: 12.5rem;
   }
   .home-contenedor h2 {
     font-weight: 500;
@@ -399,17 +404,17 @@
   }
 
   .buscador-contenedor {
-    background-color: #f9f9f9be;
-    position: relative;
-    top: -6rem;
-    border-radius: 20px;
-    margin: auto;
     width: 42rem;
     height: 10rem;
-    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #f9f9f9be;
+    position: relative;
+    top: -6rem;
+    border-radius: 1.25rem;
+    margin: auto;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 9.25rem;
   }
   .buscador-contenedor .definir-detalles {
@@ -439,13 +444,13 @@
     align-items: center;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador .iconos-busqueda {
-    margin-right: 4px;
-    height: 16px;
+    margin-right: 0.25rem;
+    height: 1rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador label {
     font-weight: 600;
     font-size: 14px;
-    width: 138px;
+    width: 8.5rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador div input {
     border-radius: 12px;
@@ -454,10 +459,10 @@
     background-color: #EEEBEB;
     font-weight: 400;
     font-size: 14px;
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.13);
     width: 100%;
     height: 2.5rem;
-    padding-left: 16px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.13);
+    padding-left: 1rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .vertical-line {
     border-left: 1px solid #757272;
@@ -468,34 +473,35 @@
 }
 @media screen and (min-width: 969px) {
   .home-contenedor {
+    border-radius: 40px;
+    border: none;
     background-color: #CEEBF1;
     width: 96%;
     height: 40rem;
-    border-radius: 40px;
-    margin: auto;
-    margin-top: 4.25rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    margin: auto;
+    margin-top: 4.25rem;
   }
   .home-contenedor h1 {
     width: 56%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-weight: 700;
     font-size: 96px;
     line-height: 120px;
     margin-bottom: 0.5rem;
     margin-right: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     margin-top: 3.75rem;
   }
   .home-contenedor img {
-    border-radius: 20px;
+    width: 18.25rem;
+    border-radius: 1.25rem;
     margin-top: 5rem;
-    width: 292px;
   }
   .home-contenedor h2 {
     font-weight: 500;
@@ -509,17 +515,17 @@
   }
 
   .buscador-contenedor {
-    background-color: #f9f9f9be;
-    position: relative;
-    top: -6rem;
-    border-radius: 20px;
-    margin: auto;
     width: 78%;
     height: 12rem;
-    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #f9f9f9be;
+    position: relative;
+    top: -6rem;
+    border-radius: 1.25rem;
+    margin: auto;
+    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 9.25rem;
   }
   .buscador-contenedor .definir-detalles {
@@ -549,8 +555,8 @@
     align-items: center;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador .iconos-busqueda {
-    margin-right: 8px;
-    height: 20px;
+    height: 1.25rem;
+    margin-right: 0.5rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador label {
     font-weight: 700;
@@ -566,7 +572,7 @@
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.13);
     width: 100%;
     height: 2.5rem;
-    padding-left: 16px;
+    padding-left: 1rem;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .vertical-line {
     border-left: 1px solid #757272;
@@ -671,18 +677,18 @@
 }
 .promociones .slider ul li div img {
   width: 16.75rem;
-  border-radius: 25px;
+  border-radius: 1.5rem;
 }
 @media screen and (max-width: 576px) {
   .promociones .slider ul li div img {
     width: 12.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 967px) {
   .promociones .slider ul li div img {
     width: 9.5rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 }
 .promociones .slider ul li div .precio {
@@ -733,7 +739,7 @@
   font-weight: 500;
   font-size: 16px;
   width: 100%;
-  margin-top: 4px;
+  margin-top: 0.25rem;
   margin-bottom: 0.75rem;
 }
 @media screen and (max-width: 576px) {
@@ -819,7 +825,7 @@
 .excursiones .slide .slide-inner .slide-item h5 {
   font-weight: 500;
   font-size: 16px;
-  margin: 8px 0 8px 0;
+  margin: 0.5rem 0 0.5rem 0;
 }
 .excursiones .slide .slide-inner .slide-item button {
   border-radius: 5px;
@@ -981,7 +987,7 @@
 }
 @media screen and (max-width: 576px) {
   .contenedor-nosotros div h3 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     font-weight: 700;
     font-size: 28px;
   }
@@ -991,7 +997,7 @@
     font-weight: 700;
     font-size: 28px;
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 .contenedor-nosotros div p {
@@ -1025,12 +1031,12 @@
 }
 @media screen and (max-width: 576px) {
   .contenedor-nosotros div .imagen-equipo {
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 967px) {
   .contenedor-nosotros div .imagen-equipo {
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 }
 
@@ -1068,7 +1074,7 @@
     font-weight: 700;
     font-size: 28px;
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 .beneficios h4 {
@@ -1131,7 +1137,7 @@
   align-items: center;
   background-color: #CEEBF1;
   width: 30%;
-  border-radius: 15px;
+  border-radius: 1rem;
   margin: auto;
   margin: 0 2.5rem 0 0;
 }
@@ -1281,9 +1287,9 @@
   }
 }
 .medios-de-pago div {
-  background-color: white;
-  border: 4px solid #CEEBF1;
   border-radius: 15px;
+  border: 4px solid #CEEBF1;
+  background-color: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -1303,7 +1309,7 @@
 .medios-de-pago div:hover {
   transform: scale(1.1);
   transition: all 300ms ease-out;
-  border: 4px solid #4E63D4;
+  border: 0.25rem solid #4E63D4;
   background-color: #ceebf198;
 }
 .medios-de-pago div h5 {
@@ -1434,12 +1440,12 @@ footer div .section-email {
 }
 @media screen and (max-width: 576px) {
   footer div .section-email {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 967px) {
   footer div .section-email {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1456,8 +1462,8 @@ footer div .section-email img {
   display: flex;
   flex-flow: row wrap;
   margin-right: 0.5rem;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
 }
 footer div .section-email label {
   font-weight: 600;
@@ -1491,7 +1497,7 @@ footer div .section-email input {
   width: 100%;
   height: 2.5rem;
   margin: 1.25rem 0 0.75rem 0;
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 @media screen and (max-width: 576px) {
   footer div .section-email input {
@@ -1548,7 +1554,7 @@ footer div section {
   }
 }
 footer div section .contacto {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 577px) and (max-width: 967px) {
   footer div section .contacto {
@@ -1673,7 +1679,7 @@ footer .copyright {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1705,7 +1711,7 @@ body {
 }
 .registro-iniciosesion .menu-contenedor .header-contenedor {
   width: 100%;
-  height: 64px;
+  height: 4rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -1713,8 +1719,8 @@ body {
   padding: 0 3% 0 3%;
 }
 .registro-iniciosesion .menu-contenedor .header-contenedor .nav-ayuda {
-  margin-left: 61.25rem;
   width: 50%;
+  margin-left: 61.25rem;
 }
 .registro-iniciosesion .menu-contenedor .header-contenedor .nav-ayuda li {
   list-style-type: none;
@@ -1833,7 +1839,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario .formulario label {
   font-weight: 500;
@@ -1854,7 +1860,7 @@ body {
   height: 3rem;
   font-weight: 400;
   font-size: 14px;
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario .formulario input:focus {
   border: 1px solid #4E63D4;
@@ -1892,7 +1898,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario button:hover {
   box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
@@ -1905,7 +1911,7 @@ body {
     font-weight: 600;
     font-size: 20px;
     margin-left: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 .registro-iniciosesion section .contenedor-de-formulario a {
@@ -1923,7 +1929,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-facebook:hover {
   box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
@@ -1939,7 +1945,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     margin-left: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-google {
@@ -1954,7 +1960,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .registro-iniciosesion section .contenedor-de-formulario a .contenedor-google:hover {
   box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
@@ -1970,7 +1976,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     margin-left: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 }
 .registro-iniciosesion section .contenedor-de-formulario .parrafos-inferiores-formulario {
@@ -1988,7 +1994,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .registro-iniciosesion section .contenedor-de-formulario .parrafos-inferiores-formulario p {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }
 .registro-iniciosesion section .contenedor-de-formulario .parrafos-inferiores-formulario p a {
@@ -1999,7 +2005,7 @@ body {
 }
 .registro-iniciosesion footer {
   width: 100%;
-  height: 52px;
+  height: 3.25rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -2075,7 +2081,7 @@ body {
 .not-found-contenedor img {
   width: 38%;
   margin: auto;
-  margin-top: 68px;
+  margin-top: 4.25rem;
 }
 @media screen and (max-width: 576px) {
   .not-found-contenedor img {
