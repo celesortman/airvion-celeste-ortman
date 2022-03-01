@@ -229,7 +229,7 @@
                     margin-bottom: 2rem;
                     @include display(flex, null, flex-start, center);
                     .iconos-busqueda {
-                        @include tamaño(null, 1.25rem);
+                        @include tamaño(auto, 1.25rem);
                         margin-right: 0.5rem;
                     }
                     label {

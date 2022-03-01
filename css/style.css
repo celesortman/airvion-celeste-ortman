@@ -555,6 +555,7 @@
     align-items: center;
   }
   .buscador-contenedor .definir-detalles .secciones-buscador .formularios-buscador .iconos-busqueda {
+    width: auto;
     height: 1.25rem;
     margin-right: 0.5rem;
   }
