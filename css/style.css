@@ -578,6 +578,9 @@
   .buscador-contenedor .definir-detalles .secciones-buscador .vertical-line {
     border-left: 1px solid #757272;
   }
+  .buscador-contenedor .definir-detalles .button {
+    display: none;
+  }
 }
 /*Fin Home*/
 /*Inicio Promociones*/
